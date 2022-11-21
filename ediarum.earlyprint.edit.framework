@@ -31,6 +31,135 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>187</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>#xxx e-caudata</String>
+												</field>
+												<field name="name">
+													<String>e-caudata (ę)</String>
+												</field>
+												<field name="description">
+													<String>e-caudata (ę) einfügen (Lateinischer Kleinbuchstabe "E" mit Ogonek)</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::header or ancestor-or-self::title or ancestor-or-self::p</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>ę</String>
+																	</entry>
+																	<entry>
+																		<String>insertPosition</String>
+																		<String>Replace</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertOrReplaceFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>188</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>#xxx g[@ref="#e-caudata" resp="xxx"]</String>
+												</field>
+												<field name="name">
+													<String>ę - Lateinischer Kleinbuchstabe "E" mit Ogonek</String>
+												</field>
+												<field name="description">
+													<String>Zeichnet vorhandenes e-caudata (ę) aus  
+&lt;TEI:g ref="#e-caudata" resp="xxx"></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>contains(oxy:current-selected-element(),"e")</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;g  ref="#e-caudata" resp="xxx" xmlns="http://www.tei-c.org/ns/1.0"/></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>priority</String>
 										</field>
 										<field name="index">
