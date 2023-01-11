@@ -279,6 +279,28 @@
                                     <String></String>
                                 </field>
                             </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_projects_directory}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/exist/rest/db/projects/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_bibl_zotero}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=9001&amp;action=update-get</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String></String>
+                                </field>
+                            </userEditorVariable>
                         </userEditorVariable-array>
                     </entry>
                 </serializableOrderedMap>
