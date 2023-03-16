@@ -3890,10 +3890,10 @@ and not(self::hi)</String>
 													<String>e-caudata (ę) einfügen (Lateinischer Kleinbuchstabe "E" mit Ogonek)</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button Images/e-caudata.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/Button Images/e-caudata.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4345,10 +4345,10 @@ and not(self::hi)</String>
 													<String>e mit Trema einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button Images/ë_emitTrema.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/Button Images/ë_emitTrema.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4415,10 +4415,10 @@ and not(self::hi)</String>
 													<String>auf dem Kopf stehendes i einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button Images/ᴉ_aufdemkopfstehendes_i.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/Button Images/ᴉ_aufdemkopfstehendes_i.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4485,10 +4485,10 @@ and not(self::hi)</String>
 													<String>auf dem Kopf stehendes u einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button Images/ṉ_aufdemkopfstehendes_u.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/Button Images/ṉ_aufdemkopfstehendes_u.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -5459,10 +5459,10 @@ and not(self::g)</String>
 													<String>c Cedille einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>file:/C:/Users/sib27sm/Dropbox/RWS/icons/g-cedille.png</String>
+													<String>${framework}/Button Images/ç_cedille_c.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>file:/C:/Users/sib27sm/Dropbox/RWS/icons/g-cedille.png</String>
+													<String>${framework}/Button Images/ç_cedille_c.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
