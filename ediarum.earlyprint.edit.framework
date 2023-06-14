@@ -31,6 +31,33 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/cssDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>4</Integer>
+										</field>
+										<field name="value">
+											<cssFile>
+												<field name="href">
+													<String>${framework}/resources/css/main.css</String>
+												</field>
+												<field name="title">
+													<String>Early Print</String>
+												</field>
+												<field name="alternate">
+													<Boolean>false</Boolean>
+												</field>
+											</cssFile>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
@@ -6003,17 +6030,864 @@ and not(self::g)</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>EP#0001 div@id=auto</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>13</Integer>
+										</field>
+										<field name="value">
+											<menuSeparator/>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>14</Integer>
+										</field>
+										<field name="value">
+											<menu>
+												<field name="label">
+													<String>EarlyPrint</String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="iconPath">
+													<String></String>
+												</field>
+												<field name="menuEntriesDescriptorList">
+													<menuEntry-array>
+														<menuItem>
+															<field name="actionID">
+																<String>figure</String>
+															</field>
+														</menuItem>
+													</menuEntry-array>
+												</field>
+												<field name="context">
+													<null/>
+												</field>
+											</menu>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/id</String>
+										</field>
+										<field name="index">
+											<Integer>-1</Integer>
+										</field>
+										<field name="value">
+											<String>Metadaten</String>
+										</field>
+										<field name="patchHandling">
+											<String>set</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
 										</field>
 										<field name="index">
-											<Integer>31</Integer>
+											<Integer>30</Integer>
 										</field>
 										<field name="value">
-											<toolbarItem>
-												<field name="actionID">
-													<String>bibl_zotero</String>
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>29</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>28</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>27</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>26</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>25</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>24</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>23</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>22</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>21</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>20</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>19</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>18</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>17</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>16</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>15</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>14</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>13</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>12</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>11</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>10</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>9</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>8</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>7</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>6</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>5</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>4</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>3</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>2</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<toolbar>
+												<field name="id">
+													<String>Metadaten</String>
 												</field>
-											</toolbarItem>
+												<field name="type">
+													<Integer>3</Integer>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="toolbarEntriesDescriptorList">
+													<toolbarEntry-array>
+														<toolbarItem>
+															<field name="actionID">
+																<String>msDesc_idno[uri]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>facsimile</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>msDesc/physDesc</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>wit(Druck)</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>wit(Manuskript)</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>msDesc/@rend</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>@select</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>profileDesc_creation_persName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>profileDesc_creation_orgName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>profileDesc_creation_placeName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>profileDesc_date-when</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>profileDesc_date-fromto</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>profileDesc_date-notBeforeAfter</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>abstract</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>quote</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>notesStmt</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>keyword</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>editor</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>respStmt</String>
+															</field>
+														</toolbarItem>
+													</toolbarEntry-array>
+												</field>
+											</toolbar>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<toolbar>
+												<field name="id">
+													<String>Briefmetadaten</String>
+												</field>
+												<field name="type">
+													<Integer>3</Integer>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="toolbarEntriesDescriptorList">
+													<toolbarEntry-array>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[sent]_persName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[sent]_orgName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[sent]_placeName</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[received]_persName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[received]_orgName</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[received]_placeName</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[sent]_date[when]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[sent]_date[from]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[sent]_date[notBefore] - Kopie</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[received]_date[when]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspAction[received]_date[notBefore]</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspDesc/note</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspContext_ref[ID]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspContext_ref[text]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>correspContext_ref[text+URL]</String>
+															</field>
+														</toolbarItem>
+													</toolbarEntry-array>
+												</field>
+											</toolbar>
 										</field>
 										<field name="patchHandling">
 											<String>addIndex</String>
@@ -6034,6 +6908,507 @@ and not(self::g)</String>
 										</field>
 										<field name="patchHandling">
 											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<toolbar>
+												<field name="id">
+													<String>Text</String>
+												</field>
+												<field name="type">
+													<Integer>2</Integer>
+												</field>
+												<field name="largeIconPath">
+													<null/>
+												</field>
+												<field name="smallIconPath">
+													<null/>
+												</field>
+												<field name="toolbarEntriesDescriptorList">
+													<toolbarEntry-array>
+														<toolbarItem>
+															<field name="actionID">
+																<String>paragraph</String>
+															</field>
+														</toolbarItem>
+														<toolbar>
+															<field name="id">
+																<String>Zeilenumbruch</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/lb.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${baseFramework}/icons/lb16.gif</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>lb</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>lb[break]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>lb[break-hyphen]</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Listen</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/ordered_list.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>itemizedlist</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>item</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Tabelle</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>/images/Table20.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String>/images/Table16.gif</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>insert.table</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>insert.table.row</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>insert.table.column</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarSeparator/>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>table.join.row.cells</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarSeparator/>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>delete.table.column</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>delete.table.row</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbarItem>
+															<field name="actionID">
+																<String>note</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>figure</String>
+															</field>
+														</toolbarItem>
+														<toolbar>
+															<field name="id">
+																<String>Folio- und Seitenwechsel</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/pagebreak.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${baseFramework}/icons/pagebreak16.gif</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>pb</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>pb[facs]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>fw</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>hi[underline]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>hi[superscript]</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>del</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>subst</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>add</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>unclear</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>gap</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>del_gap</String>
+															</field>
+														</toolbarItem>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>ex</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>supplied</String>
+															</field>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>sic-corr[deleted]</String>
+															</field>
+														</toolbarItem>
+														<toolbar>
+															<field name="id">
+																<String>Korrekturen</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/corr-sic.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${baseFramework}/icons/corr-sic16.gif</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>sic-corr</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>orig-reg</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>seg</String>
+															</field>
+														</toolbarItem>
+														<toolbar>
+															<field name="id">
+																<String>Verweise</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/verweis.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>anchor</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>ref</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>ref[note]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>ref[URL]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarSeparator/>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>ref[hasAttachement]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>ref[attachedTo]</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Datum</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/date.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>date-when</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>date-fromto</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>date-notBeforeAfter</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Sprache und Schriftart</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/foreign.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${baseFramework}/icons/foreign16.gif</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>hi[#aq_#fr]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>foreign</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbarSeparator/>
+														<toolbar>
+															<field name="id">
+																<String>Textstellen indizieren</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/index.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${baseFramework}/icons/index16.gif</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>index_personen</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>index_places</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>index_bibl</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Namen kennzeichnen</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${baseFramework}/icons/names.gif</String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>persName</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>orgName</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>placeName</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>bibl</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>rs[term]</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarSeparator/>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>rs</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>bibl_zotero</String>
+															</field>
+														</toolbarItem>
+													</toolbarEntry-array>
+												</field>
+											</toolbar>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
 										</field>
 										<field name="anchor">
 											<null/>
@@ -6162,26 +7537,44 @@ and not(self::g)</String>
 												</field>
 												<field name="toolbarEntriesDescriptorList">
 													<toolbarEntry-array>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#696 c Cedille</String>
+														<toolbar>
+															<field name="id">
+																<String>Diakritsche Zeichen</String>
 															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 e-caudata</String>
+															<field name="type">
+																<Integer>3</Integer>
 															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 e mit Trema</String>
+															<field name="largeIconPath">
+																<String></String>
 															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 y mit Trema</String>
+															<field name="smallIconPath">
+																<String></String>
 															</field>
-														</toolbarItem>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#696 c Cedille</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#692 e-caudata</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#692 e mit Trema</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#692 y mit Trema</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
 														<toolbar>
 															<field name="id">
 																<String>Gemination</String>
@@ -6294,6 +7687,16 @@ and not(self::g)</String>
 																<toolbarEntry-array>
 																	<toolbarItem>
 																		<field name="actionID">
+																			<String>#692 auf dem Kopf stehendes u</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#692 auf dem Kopf stehendes i</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
 																			<String>#696 Vorzeichen Auflösung</String>
 																		</field>
 																	</toolbarItem>
@@ -6315,16 +7718,6 @@ and not(self::g)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 auf dem Kopf stehendes i</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 auf dem Kopf stehendes u</String>
-															</field>
-														</toolbarItem>
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
@@ -6359,26 +7752,39 @@ and not(self::g)</String>
 												</field>
 												<field name="toolbarEntriesDescriptorList">
 													<toolbarEntry-array>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 Schaft-S</String>
+														<toolbar>
+															<field name="id">
+																<String>Ligaturen</String>
 															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 Schaft-S doppelt</String>
+															<field name="type">
+																<Integer>3</Integer>
 															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#692 Schaft-S und Rund-S</String>
+															<field name="largeIconPath">
+																<String></String>
 															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>#693 Tironisches Et</String>
+															<field name="smallIconPath">
+																<String></String>
 															</field>
-														</toolbarItem>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#693 Tironisches Et</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#692 Schaft-S doppelt</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>#692 Schaft-S und Rund-S</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
