@@ -57,7 +57,10 @@ text bibl::before{
 text rs[type="term"]::before{
     content: url("../icons/term.png");
 }
-
+graphic[url]{
+    content: url(oxy_base-uri()'${ediarum_projects_directory}${ediarum_project_name}/data/${ediarum_image_directory}/' attr(url));
+    width: 250px;
+}
 /*text rs[type="term"]:hover::after{
     content: attr(key);
     position: relative;
