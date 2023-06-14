@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+  id="EP#0001 div@id=auto">
+  <a:name>Kapitel einfügen (Auto ID)</a:name>
+  <a:description>Fügt ein neues Kapitel ein. Eine ID wird automatisch vergeben.</a:description>
+  <a:operations>
+    <a:operation id="SurroundWithFragmentOperation">
+      <a:xpathCondition>parent::body</a:xpathCondition>
+      <a:arguments>
+        <a:argument name="fragment"><div xmlns="http://www.tei-c.org/ns/1.0" xml:id="chap_${id}" type="chapter"/></a:argument>
+      </a:arguments>
+    </a:operation>
+  </a:operations>
+  <a:enabledInReadOnlyContext>false</a:enabledInReadOnlyContext>
+</a:authorAction>
