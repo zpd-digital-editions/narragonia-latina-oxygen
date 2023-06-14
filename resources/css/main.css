@@ -1,0 +1,44 @@
+@import url("../../../ediarum.BASE.edit/css/standard.css");
+
+div[type="chapter"]{
+    margin-bottom: 3em;
+    padding: 1em;
+    background-color: rgb(249, 251, 255);
+    margin: 0.3em;
+}
+div[type="chapter"] head{
+    font-weight: bold;
+    font-size: large;
+    padding-top: 0.7em;
+}
+text persName::before, orgName::before, placeName::before, bibl::before, rs[type="term"]::before{
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+text persName::before{
+    content: url("../icons/person.png");
+}
+text orgName::before{
+    content: url("../icons/organization.png");
+}
+text placeName::before{
+    content: url("../icons/place.png");
+}
+text bibl::before{
+    content: url("../icons/bibl.png");
+}
+text rs[type="term"]::before{
+    content: url("../icons/term.png");
+}
+/*text rs[type="term"]:hover::after{
+    content: attr(key);
+    position: relative;
+    display: inline-block;
+    background-color: cadetblue;
+    color: aliceblue;
+    border: 1px solid black;
+    padding: 2px;
+}*/
