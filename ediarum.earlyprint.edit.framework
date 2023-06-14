@@ -6340,6 +6340,134 @@ and not(self::g)</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>268</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>EP#0022 figure head</String>
+												</field>
+												<field name="name">
+													<String>Holzschnitt Titel</String>
+												</field>
+												<field name="description">
+													<String>Fügt eine Bildüberschrift ein.</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::figure</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;head type="image-title" xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/head></String>
+																	</entry>
+																	<entry>
+																		<String>goToNextEditablePosition</String>
+																		<String>true</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>269</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>EP#0023 figure p</String>
+												</field>
+												<field name="name">
+													<String>Bildbeischrift</String>
+												</field>
+												<field name="description">
+													<String>Fügt eine Bildbeischrift ein.</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::figure</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;p xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/p></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
@@ -6411,6 +6539,16 @@ and not(self::g)</String>
 																	<menuItem>
 																		<field name="actionID">
 																			<String>EP#0020 figure@type-woodcut</String>
+																		</field>
+																	</menuItem>
+																	<menuItem>
+																		<field name="actionID">
+																			<String>EP#0022 figure head</String>
+																		</field>
+																	</menuItem>
+																	<menuItem>
+																		<field name="actionID">
+																			<String>EP#0023 figure p</String>
 																		</field>
 																	</menuItem>
 																	<menuItem>
