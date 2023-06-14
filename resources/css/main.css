@@ -1,5 +1,27 @@
+/*
+Authors: Yannik Werner Herbst <yannik.herbst@uni-wuerzburg.de>
+
+Copyright 2020 Zentrum für Philologie und Digitalität 
+
+This file is a extension of ediarum.BASE.edit and requires their standard css.
+
+I'ts free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published 
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+It's distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
+*/
+
 @import url("../../../ediarum.BASE.edit/css/standard.css");
 
+/* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
     padding: 1em;
@@ -11,6 +33,8 @@ div[type="chapter"] head{
     font-size: large;
     padding-top: 0.7em;
 }
+
+/* Indizes */
 text persName::before, orgName::before, placeName::before, bibl::before, rs[type="term"]::before{
     display: inline-block;
     height: 1em;
@@ -33,6 +57,7 @@ text bibl::before{
 text rs[type="term"]::before{
     content: url("../icons/term.png");
 }
+
 /*text rs[type="term"]:hover::after{
     content: attr(key);
     position: relative;
