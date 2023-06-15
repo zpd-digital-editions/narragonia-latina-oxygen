@@ -6,6 +6,14 @@
             <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>document.type.only.local.dtds</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>document.type.use.grammar.cache</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array/>
                     </entry>
@@ -23,7 +31,7 @@
                     </entry>
                     <entry>
                         <String>frameworks.directory.url.with.editor.variables</String>
-                        <String>file:/Users/madlinma/Desktop/ZPD/Narragonien/frameworks</String>
+                        <String>file:/home/yannik/Documents/Oxygen%20Frameworks</String>
                     </entry>
                     <entry>
                         <String>key.custom.editor.variables.option.pane</String>
@@ -128,6 +136,10 @@
                                 </field>
                             </scenario>
                         </scenario-array>
+                    </entry>
+                    <entry>
+                        <String>scenarios.load.from.project</String>
+                        <Boolean>true</Boolean>
                     </entry>
                     <entry>
                         <String>use.custom.frameworks.directory.url</String>
@@ -301,6 +313,17 @@
                                     <String></String>
                                 </field>
                             </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_image_directory}</String>
+                                </field>
+                                <field name="value">
+                                    <String>image/</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String>Image directory</String>
+                                </field>
+                            </userEditorVariable>
                         </userEditorVariable-array>
                     </entry>
                 </serializableOrderedMap>
@@ -309,6 +332,7 @@
     </meta>
     <projectTree name="oebue.xpr">
         <folder path="."/>
-        <file name="http://Herbst:9.1.150;298;89;433;212;233;137;299;288;137;249;148;221;210;218;299;287;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.149;346;96;428;261;281;89;350;288;138;243;149;173;210;218;302;282;324;269;282;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.173;214;176;151;203;215;121;172;127;153;89;165;165;157;155;148;298;137;423;221;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
     </projectTree>
 </project>

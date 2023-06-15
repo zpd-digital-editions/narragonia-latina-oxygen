@@ -64,6 +64,18 @@ graphic[url]{
 text figure p {
     -oxy-placeholder-content: "[Bildbeischrift]"
 }
+text note[type="marginalia"]{
+    display: inline-block;
+    padding: 0.1em;
+    background-color: mediumpurple;
+    color: white;
+}
+text cb{
+    height: 2.5em;
+    font-weight: bold;
+    margin-top: 1em;
+    color: mediumblue;
+}
 /*text rs[type="term"]:hover::after{
     content: attr(key);
     position: relative;
