@@ -6576,7 +6576,7 @@ or ancestor-or-self::notesStmt/note</String>
 										<field name="value">
 											<action>
 												<field name="id">
-													<String>EP#0001 cb n=userinput</String>
+													<String>EP#0002 cb n=userinput</String>
 												</field>
 												<field name="name">
 													<String>Neue Textspalte</String>
@@ -6630,6 +6630,68 @@ or ancestor-or-self::notesStmt/note</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>272</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>EP#0003 Marginalia</String>
+												</field>
+												<field name="name">
+													<String>Marginalie</String>
+												</field>
+												<field name="description">
+													<String>Marginalie einfügen.</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::text</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;note place="${ask('Position', combobox, ('margin_left':'Rand links'; 'margin_right':'Rand rechts'; 'top':'Oben'; 'top_inner':'Mittig oben'; 'top_left':'Links oben'; 'top_right':'Rechts oben'; 'bottom':'Unten'; 'bottom_inner':'Mittig unten'; 'bottom_left':'Links unten'; 'bottom_right':'Rechts oben'; 'intercolumn':'Zwischenspalte'))}" hand="${ask('Schreiber', String, '')}" type="marginalia" xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/note></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
@@ -6638,7 +6700,7 @@ or ancestor-or-self::notesStmt/note</String>
 										<field name="value">
 											<menuItem>
 												<field name="actionID">
-													<String>EP#0001 cb n=userinput</String>
+													<String>EP#0002 cb n=userinput</String>
 												</field>
 											</menuItem>
 										</field>
@@ -6745,6 +6807,11 @@ or ancestor-or-self::notesStmt/note</String>
 																<null/>
 															</field>
 														</menu>
+														<menuItem>
+															<field name="actionID">
+																<String>EP#0003 Marginalia</String>
+															</field>
+														</menuItem>
 													</menuEntry-array>
 												</field>
 												<field name="context">
