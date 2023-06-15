@@ -6468,6 +6468,189 @@ and not(self::g)</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>270</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>EP#001-IX bibl_zotero</String>
+												</field>
+												<field name="name">
+													<String>Werktitel (Zotero)</String>
+												</field>
+												<field name="description">
+													<String>Im Manuskript explizit erwähnte Werktitel kennzeichnen</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::bibl[parent::witness]</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap/>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.RegisterInsertFragmentOperation</String>
+															</field>
+														</actionMode>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::text
+or ancestor-or-self::abstract 
+or ancestor-or-self::correspDesc/note
+or ancestor-or-self::notesStmt/note</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_bibl_zotero}</String>
+																	</entry>
+																	<entry>
+																		<String>element</String>
+																		<String>&lt;bibl xmlns="http://www.tei-c.org/ns/1.0" sameAs='$ITEMS'>&lt;/bibl></String>
+																	</entry>
+																	<entry>
+																		<String>item rendering</String>
+																		<String>$XPATH{/tei:span}</String>
+																	</entry>
+																	<entry>
+																		<String>item separator</String>
+																		<String> </String>
+																	</entry>
+																	<entry>
+																		<String>item variable</String>
+																		<String>$XPATH{@xml:id}</String>
+																	</entry>
+																	<entry>
+																		<String>namespaces</String>
+																		<String>tei:http://www.tei-c.org/ns/1.0</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//tei:item</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>true</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>271</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>EP#0001 cb n=userinput</String>
+												</field>
+												<field name="name">
+													<String>Neue Textspalte</String>
+												</field>
+												<field name="description">
+													<String>Fügt für Spaltentexte eine neue Spalte ein.</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::text</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;cb xmlns="http://www.tei-c.org/ns/1.0" n="${ask('Spaltennummer', String, '1')}"/></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>EP#0001 cb n=userinput</String>
+												</field>
+											</menuItem>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
@@ -7859,6 +8042,11 @@ and not(self::g)</String>
 																			<String>rs[term]</String>
 																		</field>
 																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>bibl_zotero</String>
+																		</field>
+																	</toolbarItem>
 																	<toolbarSeparator/>
 																	<toolbarItem>
 																		<field name="actionID">
@@ -7869,11 +8057,6 @@ and not(self::g)</String>
 															</field>
 														</toolbar>
 														<toolbarSeparator/>
-														<toolbarItem>
-															<field name="actionID">
-																<String>bibl_zotero</String>
-															</field>
-														</toolbarItem>
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
