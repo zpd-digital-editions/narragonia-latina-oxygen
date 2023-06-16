@@ -35,12 +35,18 @@ div[type="chapter"] head{
 }
 
 /* Indizes */
-text persName::before, orgName::before, placeName::before, bibl::before, rs[type="term"]::before{
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-    vertical-align: middle;
-    margin-right: 0.2em;
+text persName::before,
+    text orgName::before,
+    text placeName::before,
+    text bibl::before, 
+    text rs[type="term"]::before,
+    text note[type="marginalia"]::after{
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        vertical-align: middle;
+        margin-right: 0.2em;
+        margin-left: 0.2em;
 }
 text persName::before{
     content: url("../icons/person.png");
@@ -57,6 +63,8 @@ text bibl::before{
 text rs[type="term"]::before{
     content: url("../icons/term.png");
 }
+
+/* Holzschnitte */
 graphic[url]{
     content: url(oxy_base-uri()'${ediarum_projects_directory}${ediarum_project_name}/data/${ediarum_image_directory}/' attr(url));
     width: 250px;
@@ -64,12 +72,43 @@ graphic[url]{
 text figure p {
     -oxy-placeholder-content: "[Bildbeischrift]"
 }
+
+/* Marginalien */
 text note[type="marginalia"]{
     display: inline-block;
     padding: 0.1em;
     background-color: mediumpurple;
     color: white;
 }
+text note[type="marginalia"][place="top"]::after{
+    content: url('../icons/top.png');
+}
+text note[type="marginalia"][place="bottom"]::after{
+    content: url('../icons/bottom.png');
+}
+text note[type="marginalia"][place="margin_inner"]::after{
+    content: url('../icons/margin_inner.png');
+}
+text note[type="marginalia"][place="margin_outer"]::after{
+    content: url('../icons/margin_outer.png');
+}
+text note[type="marginalia"][place="top_inner"]::after{
+    content: url('../icons/top_inner.png');
+}
+text note[type="marginalia"][place="top_outer"]::after{
+    content: url('../icons/top_outer.png');
+}
+text note[type="marginalia"][place="bottom_inner"]::after{
+    content: url('../icons/bottom_inner.png');
+}
+text note[type="marginalia"][place="bottom_outer"]::after{
+    content: url('../icons/bottom_outer.png');
+}
+text note[type="marginalia"][place="intercolumn"]::after{
+    content: url('../icons/intercolumn.png');
+}
+
+/* Spalten */
 text cb{
     height: 2.5em;
     font-weight: bold;
