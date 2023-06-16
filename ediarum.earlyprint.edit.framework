@@ -20,7 +20,7 @@
 											<Integer>-1</Integer>
 										</field>
 										<field name="value">
-											<String>ediarum.EARLYPRINT.edit</String>
+											<String>ediarum.EARLYPRINT.editzoter</String>
 										</field>
 										<field name="patchHandling">
 											<String>set</String>
@@ -6606,7 +6606,7 @@ or ancestor-or-self::notesStmt/note</String>
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;cb xmlns="http://www.tei-c.org/ns/1.0" n="${ask('Spaltennummer', String, '1')}"/></String>
+																		<String>&lt;cb xmlns="http://www.tei-c.org/ns/1.0" n="${ask('Nummer', String, '1')}"/></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
@@ -6662,13 +6662,14 @@ or ancestor-or-self::notesStmt/note</String>
 													<actionMode-array>
 														<actionMode>
 															<field name="xpathCondition">
-																<String>ancestor-or-self::text</String>
+																<String>ancestor-or-self::text,
+parent::not(p)</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;note place="${ask('Position', combobox, ('margin_left':'Rand links'; 'margin_right':'Rand rechts'; 'top':'Oben'; 'top_inner':'Mittig oben'; 'top_left':'Links oben'; 'top_right':'Rechts oben'; 'bottom':'Unten'; 'bottom_inner':'Mittig unten'; 'bottom_left':'Links unten'; 'bottom_right':'Rechts oben'; 'intercolumn':'Zwischenspalte'))}" hand="${ask('Schreiber', String, '')}" type="marginalia" xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/note></String>
+																		<String>&lt;note place="${ask('Position', combobox, ('margin_inner':'Rand links'; 'margin_outer':'Rand rechts'; 'top':'Oben'; 'top_inner':'Links oben'; 'top_outer':'Rechts oben'; 'bottom':'Unten'; 'bottom_inner':'Links unten'; 'bottom_outer':'Rechts oben'; 'intercolumn':'Zwischenspalte'))}" hand="${ask('Schreiber', String, '')}" type="marginalia" xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/note></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
