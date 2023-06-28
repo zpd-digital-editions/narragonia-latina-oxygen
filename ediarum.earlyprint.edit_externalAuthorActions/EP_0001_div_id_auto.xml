@@ -7,7 +7,7 @@
   <a:description>Fügt ein neues Kapitel ein. Eine ID wird automatisch vergeben.</a:description>
   <a:operations>
     <a:operation id="SurroundWithFragmentOperation">
-      <a:xpathCondition>parent::body</a:xpathCondition>
+      <a:xpathCondition>ancestor-or-self::text</a:xpathCondition>
       <a:arguments>
         <a:argument name="fragment"><div xmlns="http://www.tei-c.org/ns/1.0" xml:id="chap_${id}" type="chapter"/></a:argument>
       </a:arguments>
