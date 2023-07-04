@@ -107,7 +107,11 @@ text note[type="marginalia"][place="bottom_outer"]::after{
 text note[type="marginalia"][place="intercolumn"]::after{
     content: url('../icons/intercolumn.png');
 }
-
+/* Schriftfarbe */
+text hi[style^=color] {
+    color: oxy_substring(attr(style),6, 
+oxy_indexof(attr(style),";"));
+}
 /* Spalten */
 text cb{
     height: 2.5em;
