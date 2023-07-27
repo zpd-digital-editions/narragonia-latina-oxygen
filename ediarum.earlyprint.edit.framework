@@ -6693,6 +6693,254 @@ parent::not(p)</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>273</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>symbol_metricalBreve</String>
+												</field>
+												<field name="name">
+													<String>Breve</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&amp;#9169;</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>274</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>symbol_longOverShort</String>
+												</field>
+												<field name="name">
+													<String>Lang über Kurz</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&amp;#9170;</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>275</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>symbol_longOverTwoShort</String>
+												</field>
+												<field name="name">
+													<String>Lang über doppel Kurz</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&amp;#9172;</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>276</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>symbol_pipe</String>
+												</field>
+												<field name="name">
+													<String>Pipe Symbol</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>|</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
@@ -8153,6 +8401,49 @@ parent::not(p)</String>
 																	<toolbarItem>
 																		<field name="actionID">
 																			<String>EP#0012 l</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Metrik</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String></String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_metricalBreve</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_emDash</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_longOverShort</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_longOverTwoShort</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_pipe</String>
 																		</field>
 																	</toolbarItem>
 																</toolbarEntry-array>
