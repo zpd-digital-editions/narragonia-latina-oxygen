@@ -34,6 +34,9 @@ div[type="chapter"] head{
     padding-top: 0.7em;
 }
 
+text ab[style^=text-align] {
+    content:attr(style);
+}
 /* Indizes */
 text persName::before,
     text orgName::before,
