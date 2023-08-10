@@ -6047,10 +6047,10 @@ and not(self::g)</String>
 													<String>Fügt ein Gedicht ein.</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button%20Images/icon_gedicht.png</String>
+													<String>${framework}/resources/icons/poem.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/resources/icons/small_poem.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -6109,10 +6109,10 @@ and not(self::g)</String>
 													<String>Fügt eine Strophe in ein bestehendes Gedicht ein.</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button%20Images/icon_strophe.png</String>
+													<String>${framework}/resources/icons/verse.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/resources/icons/small_verse.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -6171,10 +6171,10 @@ and not(self::g)</String>
 													<String>Fügt eine neue Zeile in Gedichte ein.</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button%20Images/icon_gedichtzeile.png</String>
+													<String>${framework}/resources/icons/line.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/resources/icons/small_line.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
