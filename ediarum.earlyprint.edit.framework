@@ -6047,7 +6047,7 @@ and not(self::g)</String>
 													<String>Fügt ein Gedicht ein.</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button%20Images/icon_gedicht.png</String>
 												</field>
 												<field name="smallIconPath">
 													<String></String>
@@ -6109,7 +6109,7 @@ and not(self::g)</String>
 													<String>Fügt eine Strophe in ein bestehendes Gedicht ein.</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button%20Images/icon_strophe.png</String>
 												</field>
 												<field name="smallIconPath">
 													<String></String>
@@ -6171,7 +6171,7 @@ and not(self::g)</String>
 													<String>Fügt eine neue Zeile in Gedichte ein.</String>
 												</field>
 												<field name="largeIconPath">
-													<String></String>
+													<String>${framework}/Button%20Images/icon_gedichtzeile.png</String>
 												</field>
 												<field name="smallIconPath">
 													<String></String>
