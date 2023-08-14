@@ -10,6 +10,7 @@
                         <String-array>
                             <String>C:\Users\janin\Documents\Studium\Digital Humanities\Hiwi\ediarum Frameworks\ediarum.REGISTER.edit</String>
                             <String>C:\Users\janin\Documents\Studium\Digital Humanities\Hiwi\ediarum Frameworks\ediarum.BASE.edit</String>
+                            <String>C:\Users\janin\Documents\Studium\Digital Humanities\Hiwi\ediarum Frameworks\narragonia-latina-oxygen</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -343,7 +344,7 @@
     </meta>
     <projectTree name="oebue.xpr">
         <folder path="."/>
-        <file name="http://Herbst:9.1.147;345;95;430;265;237;93;298;288;136;249;145;178;210;218;302;280;327;269;323;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
-        <file name="http://Herbst:9.1.147;345;95;430;265;237;93;298;288;136;249;145;178;210;218;302;280;327;269;323;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
+        <file name="http://Herbst:9.1.97;301;139;430;266;236;89;301;288;91;244;149;173;210;218;258;288;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.97;301;139;430;266;236;89;301;288;91;244;149;173;210;218;258;288;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
     </projectTree>
 </project>
