@@ -7041,7 +7041,7 @@ parent::not(p)</String>
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" xml:id="chap_${ask('Id',String)}" type="chapter"/></String>
+																		<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" xml:id="${ask('Id',String)}" type="chapter" subtype="${ask('Handelt es sich um ein Paratextkapitel?', radio, ('ja':'Ja';'nein':'Nein'),'nein')})}"/></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
