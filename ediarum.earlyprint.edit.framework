@@ -7065,6 +7065,68 @@ parent::not(p)</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>279</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>symbol_metric</String>
+												</field>
+												<field name="name">
+													<String>Metriksymbol</String>
+												</field>
+												<field name="description">
+													<String>Metriksymbole einfügen</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String></String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>${ask('Metriksymbol', combobox, ('&amp;#728;':'Breve';'&amp;#9170;':'Lang über Kurz'; '&amp;#9172;':'Lang über Doppel Kurz'; '&amp;#8212;':'Gevierstrich'; '|':'Pipe Symbol'),'Breve')}</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
@@ -8615,6 +8677,11 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbarItem>
+															<field name="actionID">
+																<String>symbol_metric</String>
+															</field>
+														</toolbarItem>
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
