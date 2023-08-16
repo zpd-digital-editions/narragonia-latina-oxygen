@@ -8557,39 +8557,21 @@ parent::not(p)</String>
 															</field>
 														</toolbar>
 														<toolbarSeparator/>
-														<toolbar>
-															<field name="id">
-																<String>Gedicht</String>
+														<toolbarItem>
+															<field name="actionID">
+																<String>EP#0010 lg</String>
 															</field>
-															<field name="type">
-																<Integer>3</Integer>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>EP#0011 lg@type-stanza</String>
 															</field>
-															<field name="largeIconPath">
-																<String></String>
+														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>EP#0012 l</String>
 															</field>
-															<field name="smallIconPath">
-																<String></String>
-															</field>
-															<field name="toolbarEntriesDescriptorList">
-																<toolbarEntry-array>
-																	<toolbarItem>
-																		<field name="actionID">
-																			<String>EP#0010 lg</String>
-																		</field>
-																	</toolbarItem>
-																	<toolbarItem>
-																		<field name="actionID">
-																			<String>EP#0011 lg@type-stanza</String>
-																		</field>
-																	</toolbarItem>
-																	<toolbarItem>
-																		<field name="actionID">
-																			<String>EP#0012 l</String>
-																		</field>
-																	</toolbarItem>
-																</toolbarEntry-array>
-															</field>
-														</toolbar>
+														</toolbarItem>
 														<toolbar>
 															<field name="id">
 																<String>Metrik</String>
