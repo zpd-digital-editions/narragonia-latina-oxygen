@@ -6141,7 +6141,7 @@ and not(self::g)</String>
 													<actionMode-array>
 														<actionMode>
 															<field name="xpathCondition">
-																<String>parent::lg[@type="poem"]</String>
+																<String>ancestor-or-self::lg[@type="poem"]</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>
@@ -6203,7 +6203,7 @@ and not(self::g)</String>
 													<actionMode-array>
 														<actionMode>
 															<field name="xpathCondition">
-																<String>parent::lg</String>
+																<String>ancestor-or-self::lg</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>

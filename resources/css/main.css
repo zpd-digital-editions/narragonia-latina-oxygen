@@ -37,6 +37,22 @@ div[type="chapter"] head{
 text ab[style^=text-align] {
     content:attr(style);
 }
+
+/* Gedichte */
+lg[type="poem"]{
+    margin-left: 2em;
+    text-align: left;
+}
+lg[type="stanza"]{
+    margin-top: 2em;
+}
+lg[type="poem"]::after{
+    content:"";
+    margin-bottom: 1em;
+    border-bottom: solid;
+    border-color: black;
+}
+
 /* Indizes */
 text persName::before,
     text orgName::before,

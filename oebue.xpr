@@ -328,6 +328,17 @@
                                     <String>Image directory</String>
                                 </field>
                             </userEditorVariable>
+                            <userEditorVariable>
+                                <field name="name">
+                                    <String>${ediarum_index_varianten}</String>
+                                </field>
+                                <field name="value">
+                                    <String>/oxygen/ediarum.xql?index=9004</String>
+                                </field>
+                                <field name="shortDescription">
+                                    <String>Register für Varianten</String>
+                                </field>
+                            </userEditorVariable>
                         </userEditorVariable-array>
                     </entry>
                 </serializableOrderedMap>
