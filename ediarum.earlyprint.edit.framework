@@ -6141,13 +6141,13 @@ and not(self::g)</String>
 													<actionMode-array>
 														<actionMode>
 															<field name="xpathCondition">
-																<String>ancestor-or-self::lg[@type="poem"]</String>
+																<String>ancestor-or-self::lg[@type="poem" and not(@type="stanza)]</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;lg xmlns="http://www.tei-c.org/ns/1.0" type="stanza" n="${count(preceding-sibling::lg)}">&lt;l>&lt;/l>&lt;/lg></String>
+																		<String>&lt;lg xmlns="http://www.tei-c.org/ns/1.0" type="stanza" n="${count(preceding-sibling::lg)}">&lt;l>${caret}&lt;/l>&lt;/lg></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
@@ -6209,7 +6209,7 @@ and not(self::g)</String>
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0">&lt;/l></String>
+																		<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/l></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
