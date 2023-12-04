@@ -7950,6 +7950,23 @@ parent::not(p)</String>
 											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
 										</field>
 										<field name="index">
+											<Integer>2</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
+										</field>
+										<field name="index">
 											<Integer>1</Integer>
 										</field>
 										<field name="value">
@@ -8533,40 +8550,7 @@ parent::not(p)</String>
 																<String>@met</String>
 															</field>
 														</toolbarItem>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>1</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Sonderzeichen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
 																<String>Symbole</String>
@@ -8602,11 +8586,6 @@ parent::not(p)</String>
 																			<String>symbol_symbols</String>
 																		</field>
 																	</toolbarItem>
-																	<toolbarItem>
-																		<field name="actionID">
-																			<String>#xxx e-caudata</String>
-																		</field>
-																	</toolbarItem>
 																	<toolbarSeparator/>
 																	<toolbarItem>
 																		<field name="actionID">
@@ -8633,43 +8612,10 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>2</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Diakritische Zeichen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
-																<String>Diakritsche Zeichen</String>
+																<String>Diakritische Zeichen</String>
 															</field>
 															<field name="type">
 																<Integer>3</Integer>
@@ -8738,40 +8684,7 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>3</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Glyphen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
 																<String>Vorzeichen</String>
@@ -8848,40 +8761,7 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>4</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Ligaturen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
 																<String>Ligaturen</String>
@@ -8915,6 +8795,12 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>website</String>
+															</field>
+														</toolbarItem>
 													</toolbarEntry-array>
 												</field>
 											</toolbar>
