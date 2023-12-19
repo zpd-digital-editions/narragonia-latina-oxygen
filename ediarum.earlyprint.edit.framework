@@ -3934,10 +3934,10 @@ and not(self::hi)</String>
 													<String>e-caudata (ę) einfügen (Lateinischer Kleinbuchstabe "E" mit Ogonek)</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/e-caudata.png</String>
+													<String>${framework}/resources/icons/e-caudata.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/e-caudata.png</String>
+													<String>${framework}/resources/icons/e-caudata.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4389,10 +4389,10 @@ and not(self::hi)</String>
 													<String>e mit Trema einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ë_emitTrema.png</String>
+													<String>${framework}/resources/icons/e%CC%88_emitTrema.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ë_emitTrema.png</String>
+													<String>${framework}/resources/icons/e%CC%88_emitTrema.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4459,10 +4459,10 @@ and not(self::hi)</String>
 													<String>auf dem Kopf stehendes i einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ᴉ_aufdemkopfstehendes_i.png</String>
+													<String>${framework}/resources/icons/%E1%B4%89_aufdemkopfstehendes_i.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ᴉ_aufdemkopfstehendes_i.png</String>
+													<String>${framework}/resources/icons/%E1%B4%89_aufdemkopfstehendes_i.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4529,10 +4529,10 @@ and not(self::hi)</String>
 													<String>auf dem Kopf stehendes u einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ṉ_aufdemkopfstehendes_u.png</String>
+													<String>${framework}/resources/icons/n%CC%B1_aufdemkopfstehendes_u.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ṉ_aufdemkopfstehendes_u.png</String>
+													<String>${framework}/resources/icons/n%CC%B1_aufdemkopfstehendes_u.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -5503,10 +5503,10 @@ and not(self::g)</String>
 													<String>c Cedille einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ç_cedille_c.png</String>
+													<String>${framework}/resources/icons/c%CC%A7_cedille_c.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ç_cedille_c.png</String>
+													<String>${framework}/resources/icons/c%CC%A7_cedille_c.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
