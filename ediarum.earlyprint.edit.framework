@@ -8504,7 +8504,7 @@ parent::not(p)</String>
 														</toolbar>
 														<toolbar>
 															<field name="id">
-																<String>Metrik</String>
+																<String>Metriksymbole</String>
 															</field>
 															<field name="type">
 																<Integer>3</Integer>
@@ -8545,11 +8545,6 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-														<toolbarItem>
-															<field name="actionID">
-																<String>@met</String>
-															</field>
-														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
