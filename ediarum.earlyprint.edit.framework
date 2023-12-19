@@ -6079,7 +6079,7 @@ and not(self::g)</String>
 													<actionMode-array>
 														<actionMode>
 															<field name="xpathCondition">
-																<String>ancestor-or-self::text</String>
+																<String>self:: p[not(type="poem")] or div[not(type="poem")]</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>
