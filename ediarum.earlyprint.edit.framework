@@ -7020,6 +7020,88 @@ parent::not(p)</String>
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>278</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>metDecl</String>
+												</field>
+												<field name="name">
+													<String>Metrik Deklaration</String>
+												</field>
+												<field name="description">
+													<String>Metrum wird deklariert</String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::lg</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>URL</String>
+																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_metriken}</String>
+																	</entry>
+																	<entry>
+																		<String>element</String>
+																		<String>&lt;metDecl xmlns="http://www.tei-c,org/ns/1.0" key="$ITEMS">&lt;/metDecl></String>
+																	</entry>
+																	<entry>
+																		<String>item rendering</String>
+																		<String>$XPATH{/label}</String>
+																	</entry>
+																	<entry>
+																		<String>item variable</String>
+																		<String>$XPATH{@xml:id}</String>
+																	</entry>
+																	<entry>
+																		<String>namespaces</String>
+																		<String>tei:http://www.tei-c.org/ns/1.0</String>
+																	</entry>
+																	<entry>
+																		<String>node</String>
+																		<String>//metDecl</String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/menubarDescriptor/menuEntriesDescriptorList/[0]/menuEntriesDescriptorList</String>
 										</field>
 										<field name="index">
