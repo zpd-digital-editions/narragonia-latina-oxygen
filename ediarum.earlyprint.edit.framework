@@ -7065,8 +7065,16 @@ parent::not(p)</String>
 																		<String>ref</String>
 																	</entry>
 																	<entry>
+																		<String>attribute value</String>
+																		<String>$ITEMS</String>
+																	</entry>
+																	<entry>
 																		<String>item rendering</String>
 																		<String>$XPATH{/label}</String>
+																	</entry>
+																	<entry>
+																		<String>item separator</String>
+																		<String> </String>
 																	</entry>
 																	<entry>
 																		<String>item variable</String>
