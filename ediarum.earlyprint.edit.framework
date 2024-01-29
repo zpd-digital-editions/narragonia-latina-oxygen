@@ -7028,13 +7028,13 @@ parent::not(p)</String>
 										<field name="value">
 											<action>
 												<field name="id">
-													<String>metDecl</String>
+													<String>metDecl[@type=poem]</String>
 												</field>
 												<field name="name">
-													<String>Metrik Deklaration</String>
+													<String>Metrik Deklaration für Gedichte</String>
 												</field>
 												<field name="description">
-													<String>Metrum wird deklariert</String>
+													<String>Metrum wird für ein Gedicht deklariert</String>
 												</field>
 												<field name="largeIconPath">
 													<String></String>
@@ -7052,7 +7052,7 @@ parent::not(p)</String>
 													<actionMode-array>
 														<actionMode>
 															<field name="xpathCondition">
-																<String>ancestor-or-self::lg</String>
+																<String>ancestor-or-self::lg[@type="poem"]</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>
@@ -7061,8 +7061,8 @@ parent::not(p)</String>
 																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_metriken}</String>
 																	</entry>
 																	<entry>
-																		<String>element</String>
-																		<String>&lt;metDecl xmlns="http://www.tei-c,org/ns/1.0" key="$ITEMS">&lt;/metDecl></String>
+																		<String>attribute name</String>
+																		<String>ref</String>
 																	</entry>
 																	<entry>
 																		<String>item rendering</String>
@@ -7080,16 +7080,20 @@ parent::not(p)</String>
 																		<String>node</String>
 																		<String>//metDecl</String>
 																	</entry>
+																	<entry>
+																		<String>xpath to element of the attribute</String>
+																		<String>ancestor-or-self::lg[@type="poem"]</String>
+																	</entry>
 																</serializableOrderedMap>
 															</field>
 															<field name="operationID">
-																<String>org.bbaw.telota.ediarum.RegisterSurroundWithElementOperation</String>
+																<String>org.bbaw.telota.ediarum.RegisterChangeAttributeOperation</String>
 															</field>
 														</actionMode>
 													</actionMode-array>
 												</field>
 												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
+													<Boolean>true</Boolean>
 												</field>
 											</action>
 										</field>
