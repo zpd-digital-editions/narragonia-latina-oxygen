@@ -39,6 +39,13 @@ text ab[style^=text-align] {
 }
 
 /* Gedichte */
+
+lg[type="poem"]:before{
+    display:block;
+    content:attr(met);
+    background-color:lightgreen;
+}
+
 lg[type="poem"]{
     margin-left: 2em;
     text-align: left;

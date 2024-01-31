@@ -8643,11 +8643,6 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-														<toolbarItem>
-															<field name="actionID">
-																<String>insertPoemMetric</String>
-															</field>
-														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
