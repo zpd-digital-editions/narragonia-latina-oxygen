@@ -27,6 +27,7 @@
                             <String>https://bibeluebersetzer.philhist.uni-augsburg.de/oxygen/ediarum_basis/update.xml</String>
                             <String>https://bibeluebersetzer.philhist.uni-augsburg.de/oxygen/updateSite.xml</String>
                             <String>https://bibeluebersetzer.philhist.uni-augsburg.de/oxygen/ediarum_msdesc/update.xml</String>
+                            <String>https://www.oxygenxml.com/InstData/Addons/default/updateSite.xml</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -341,10 +342,10 @@
                             </userEditorVariable>
                             <userEditorVariable>
                                 <field name="name">
-                                    <String>${ediarum_index_metriken}</String>
+                                    <String>${ediarum_index_metric}</String>
                                 </field>
                                 <field name="value">
-                                    <String>/oxygen/ediarum.xql?index=9005&amp;action=update-get</String>
+                                    <String>/oxygen/ediarum.xql?index=9005</String>
                                 </field>
                                 <field name="shortDescription">
                                     <String></String>

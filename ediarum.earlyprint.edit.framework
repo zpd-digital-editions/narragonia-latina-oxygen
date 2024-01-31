@@ -7028,10 +7028,10 @@ parent::not(p)</String>
 										<field name="value">
 											<action>
 												<field name="id">
-													<String>metDecl[@type=poem]</String>
+													<String>insertPoemMetric</String>
 												</field>
 												<field name="name">
-													<String>Metrik Deklaration für Gedichte</String>
+													<String>Metrik für Gedichte</String>
 												</field>
 												<field name="description">
 													<String>Metrum wird für ein Gedicht deklariert</String>
@@ -7058,11 +7058,11 @@ parent::not(p)</String>
 																<serializableOrderedMap>
 																	<entry>
 																		<String>URL</String>
-																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_metriken}</String>
+																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_metric}</String>
 																	</entry>
 																	<entry>
 																		<String>attribute name</String>
-																		<String>ref</String>
+																		<String>met</String>
 																	</entry>
 																	<entry>
 																		<String>attribute value</String>
@@ -7070,7 +7070,7 @@ parent::not(p)</String>
 																	</entry>
 																	<entry>
 																		<String>item rendering</String>
-																		<String>$XPATH{/label}</String>
+																		<String>$XPATH{//tei:span}</String>
 																	</entry>
 																	<entry>
 																		<String>item separator</String>
@@ -7078,7 +7078,11 @@ parent::not(p)</String>
 																	</entry>
 																	<entry>
 																		<String>item variable</String>
-																		<String>$XPATH{@xml:id}</String>
+																		<String>#$XPATH{@xml:id}</String>
+																	</entry>
+																	<entry>
+																		<String>multiple selection</String>
+																		<String>false</String>
 																	</entry>
 																	<entry>
 																		<String>namespaces</String>
@@ -7086,7 +7090,7 @@ parent::not(p)</String>
 																	</entry>
 																	<entry>
 																		<String>node</String>
-																		<String>//metDecl</String>
+																		<String>//tei:item</String>
 																	</entry>
 																	<entry>
 																		<String>xpath to element of the attribute</String>
@@ -8639,6 +8643,11 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbarItem>
+															<field name="actionID">
+																<String>insertPoemMetric</String>
+															</field>
+														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
