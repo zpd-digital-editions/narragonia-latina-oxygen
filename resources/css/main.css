@@ -19,7 +19,9 @@ You should have received a copy of the GNU Lesser General Public License
 along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
-@import url("../../../ediarum.BASE.edit-2.0.0/css/standard.css");
+@import url("../../../ediarum.BASE.edit/css/standard.css");
+
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
 
 /* Kapitel */
 div[type="chapter"]{
@@ -129,4 +131,45 @@ lg[type="stanza"]::before {
     display: block;
     content: attr(met);
     background-color: red;
+}
+
+
+/* header */
+title[type="main"] {
+    text-decoration: underline;  
+}
+
+author {
+    content: "Autor: ";
+}
+
+titleStatement {
+    display: inline-block;
+}
+
+titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before {
+    content:"\a";
+    white-space: pre;
+}
+
+sourceDesc titleStmt {
+    visibility: hidden;
+}
+
+titleStatement::after {
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+oxy|comment {
+    display:none !important;
+}
+
+ref {
+    content: "Referenz: " attr(target);
+}
+
+language {
+    content: "Sprache: ";
 }
