@@ -58,23 +58,6 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors/[77]/smallIconPath</String>
-										</field>
-										<field name="index">
-											<Integer>-1</Integer>
-										</field>
-										<field name="value">
-											<String>${frameworks}/narragonia-latina-oxygen/resources/icons/geviert_symbol.png</String>
-										</field>
-										<field name="patchHandling">
-											<String>set</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
@@ -6055,192 +6038,6 @@ and not(self::g)</String>
 										<field name="value">
 											<action>
 												<field name="id">
-													<String>EP#0010 lg</String>
-												</field>
-												<field name="name">
-													<String>Gedicht einfügen</String>
-												</field>
-												<field name="description">
-													<String>Fügt ein Gedicht ein.</String>
-												</field>
-												<field name="largeIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/poem.png</String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/small_poem.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>self:: p[not(type="poem")] or div[not(type="poem")]</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&lt;lg xmlns="http://www.tei-c.org/ns/1.0" xml:id="lg_${id}" type="poem">${caret}&lt;/lg></String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>264</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>EP#0011 lg@type-stanza</String>
-												</field>
-												<field name="name">
-													<String>Strophe einfügen</String>
-												</field>
-												<field name="description">
-													<String>Fügt eine Strophe in ein bestehendes Gedicht ein.</String>
-												</field>
-												<field name="largeIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/verse.png</String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/small_verse.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>self::lg[@type="poem"]</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&lt;lg xmlns="http://www.tei-c.org/ns/1.0" type="stanza">&lt;l>${caret}&lt;/l>&lt;/lg></String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>265</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>EP#0012 l</String>
-												</field>
-												<field name="name">
-													<String>Gedichtzeile einfügen</String>
-												</field>
-												<field name="description">
-													<String>Fügt eine neue Zeile in Gedichte ein.</String>
-												</field>
-												<field name="largeIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/line.png</String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/small_line.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>ancestor-or-self::lg</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0">${caret}&lt;/l></String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>266</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
 													<String>EP#0020 figure@type-woodcut</String>
 												</field>
 												<field name="name">
@@ -6298,7 +6095,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>267</Integer>
+											<Integer>264</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6360,7 +6157,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>268</Integer>
+											<Integer>265</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6426,7 +6223,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>269</Integer>
+											<Integer>266</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6488,7 +6285,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>270</Integer>
+											<Integer>267</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6588,7 +6385,7 @@ or ancestor-or-self::notesStmt/note</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>271</Integer>
+											<Integer>268</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6650,7 +6447,7 @@ or ancestor-or-self::notesStmt/note</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>272</Integer>
+											<Integer>269</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6713,7 +6510,7 @@ parent::not(p)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>273</Integer>
+											<Integer>270</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6775,61 +6572,16 @@ parent::not(p)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>274</Integer>
+											<Integer>77</Integer>
 										</field>
 										<field name="value">
-											<action>
-												<field name="id">
-													<String>symbol_metricalBreve</String>
-												</field>
-												<field name="name">
-													<String>Breve</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/breve_symbol.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String></String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&amp;#9169;</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
+											<null/>
 										</field>
 										<field name="patchHandling">
-											<String>addIndex</String>
+											<String>removeIndex</String>
 										</field>
 										<field name="anchor">
-											<null/>
+											<String>symbol_emDash</String>
 										</field>
 									</poPatch>
 									<poPatch>
@@ -6837,283 +6589,16 @@ parent::not(p)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>275</Integer>
+											<Integer>76</Integer>
 										</field>
 										<field name="value">
-											<action>
-												<field name="id">
-													<String>symbol_longOverTwoShort</String>
-												</field>
-												<field name="name">
-													<String>Lang über doppel Kurz</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/lang_doppelkurz_symbol.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String></String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&amp;#9172;</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
 											<null/>
 										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>276</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>symbol_longOverShort</String>
-												</field>
-												<field name="name">
-													<String>Lang über Kurz</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/lang_kurz_symbol.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String></String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&amp;#9170;</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
 										<field name="patchHandling">
-											<String>addIndex</String>
+											<String>removeIndex</String>
 										</field>
 										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>277</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>symbol_pipe</String>
-												</field>
-												<field name="name">
-													<String>Pipe Symbol</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String>${frameworks}/narragonia-latina-oxygen/resources/icons/pipe_symbol.png</String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String></String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>|</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>278</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>insertPoemMetric</String>
-												</field>
-												<field name="name">
-													<String>Metrik für Gedichte</String>
-												</field>
-												<field name="description">
-													<String>Metrum wird für ein Gedicht deklariert</String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>ancestor-or-self::lg[@type="poem"]</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>URL</String>
-																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_metric}</String>
-																	</entry>
-																	<entry>
-																		<String>attribute name</String>
-																		<String>met</String>
-																	</entry>
-																	<entry>
-																		<String>attribute value</String>
-																		<String>$ITEMS</String>
-																	</entry>
-																	<entry>
-																		<String>item rendering</String>
-																		<String>$XPATH{//tei:span}</String>
-																	</entry>
-																	<entry>
-																		<String>item separator</String>
-																		<String> </String>
-																	</entry>
-																	<entry>
-																		<String>item variable</String>
-																		<String>#$XPATH{@xml:id}</String>
-																	</entry>
-																	<entry>
-																		<String>multiple selection</String>
-																		<String>false</String>
-																	</entry>
-																	<entry>
-																		<String>namespaces</String>
-																		<String>tei:http://www.tei-c.org/ns/1.0</String>
-																	</entry>
-																	<entry>
-																		<String>node</String>
-																		<String>//tei:item</String>
-																	</entry>
-																	<entry>
-																		<String>xpath to element of the attribute</String>
-																		<String>ancestor-or-self::lg[@type="poem"]</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>org.bbaw.telota.ediarum.RegisterChangeAttributeOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>true</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
+											<String>symbol_enDash</String>
 										</field>
 									</poPatch>
 									<poPatch>
