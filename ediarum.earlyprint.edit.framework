@@ -8128,6 +8128,29 @@ parent::not(p)</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Metrum</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${framework}/resources/icons/poesie.png</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${framework}/resources/icons/poesie.png</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>insertPoemMetric</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
 														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
