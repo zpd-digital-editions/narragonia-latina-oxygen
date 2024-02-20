@@ -3917,10 +3917,10 @@ and not(self::hi)</String>
 													<String>e-caudata (ę) einfügen (Lateinischer Kleinbuchstabe "E" mit Ogonek)</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/e-caudata.png</String>
+													<String>${framework}/resources/icons/e-caudata.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/e-caudata.png</String>
+													<String>${framework}/resources/icons/e-caudata.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4372,10 +4372,10 @@ and not(self::hi)</String>
 													<String>e mit Trema einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ë_emitTrema.png</String>
+													<String>${framework}/resources/icons/e%CC%88_emitTrema.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ë_emitTrema.png</String>
+													<String>${framework}/resources/icons/e%CC%88_emitTrema.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4442,10 +4442,10 @@ and not(self::hi)</String>
 													<String>auf dem Kopf stehendes i einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ᴉ_aufdemkopfstehendes_i.png</String>
+													<String>${framework}/resources/icons/%E1%B4%89_aufdemkopfstehendes_i.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ᴉ_aufdemkopfstehendes_i.png</String>
+													<String>${framework}/resources/icons/%E1%B4%89_aufdemkopfstehendes_i.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4512,10 +4512,10 @@ and not(self::hi)</String>
 													<String>auf dem Kopf stehendes u einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ṉ_aufdemkopfstehendes_u.png</String>
+													<String>${framework}/resources/icons/n%CC%B1_aufdemkopfstehendes_u.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ṉ_aufdemkopfstehendes_u.png</String>
+													<String>${framework}/resources/icons/n%CC%B1_aufdemkopfstehendes_u.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -5486,10 +5486,10 @@ and not(self::g)</String>
 													<String>c Cedille einfügen</String>
 												</field>
 												<field name="largeIconPath">
-													<String>${framework}/Button Images/ç_cedille_c.png</String>
+													<String>${framework}/resources/icons/c%CC%A7_cedille_c.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>${framework}/Button Images/ç_cedille_c.png</String>
+													<String>${framework}/resources/icons/c%CC%A7_cedille_c.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -6038,192 +6038,6 @@ and not(self::g)</String>
 										<field name="value">
 											<action>
 												<field name="id">
-													<String>EP#0010 lg</String>
-												</field>
-												<field name="name">
-													<String>Gedicht einfügen</String>
-												</field>
-												<field name="description">
-													<String>Fügt ein Gedicht ein.</String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>ancestor-or-self::text</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&lt;lg xmlns="http://www.tei-c.org/ns/1.0" xml:id="lg_${id}">${caret}&lt;/lg></String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>264</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>EP#0011 lg@type-stanza</String>
-												</field>
-												<field name="name">
-													<String>Strophe einfügen</String>
-												</field>
-												<field name="description">
-													<String>Fügt eine Strophe in ein bestehendes Gedicht ein.</String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>parent::lg[not(@type)]</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&lt;lg xmlns="http://www.tei-c.org/ns/1.0" type="stanza" n="${count(preceding-sibling::lg)}">&lt;l>&lt;/l>&lt;/lg></String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>265</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>EP#0012 l</String>
-												</field>
-												<field name="name">
-													<String>Gedichtzeile einfügen</String>
-												</field>
-												<field name="description">
-													<String>Fügt eine neue Zeile in Gedichte ein.</String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>parent::lg</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>fragment</String>
-																		<String>&lt;l xmlns="http://www.tei-c.org/ns/1.0">&lt;/l></String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>266</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
 													<String>EP#0020 figure@type-woodcut</String>
 												</field>
 												<field name="name">
@@ -6281,7 +6095,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>267</Integer>
+											<Integer>264</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6343,7 +6157,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>268</Integer>
+											<Integer>265</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6409,7 +6223,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>269</Integer>
+											<Integer>266</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6471,7 +6285,7 @@ and not(self::g)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>270</Integer>
+											<Integer>267</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6571,7 +6385,7 @@ or ancestor-or-self::notesStmt/note</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>271</Integer>
+											<Integer>268</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6633,7 +6447,7 @@ or ancestor-or-self::notesStmt/note</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>272</Integer>
+											<Integer>269</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6689,6 +6503,102 @@ parent::not(p)</String>
 										</field>
 										<field name="anchor">
 											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>270</Integer>
+										</field>
+										<field name="value">
+											<action>
+												<field name="id">
+													<String>@met</String>
+												</field>
+												<field name="name">
+													<String>Metrum</String>
+												</field>
+												<field name="description">
+													<String></String>
+												</field>
+												<field name="largeIconPath">
+													<String></String>
+												</field>
+												<field name="smallIconPath">
+													<String></String>
+												</field>
+												<field name="accessKey">
+													<String></String>
+												</field>
+												<field name="accelerator">
+													<null/>
+												</field>
+												<field name="actionModes">
+													<actionMode-array>
+														<actionMode>
+															<field name="xpathCondition">
+																<String>ancestor-or-self::text</String>
+															</field>
+															<field name="argValues">
+																<serializableOrderedMap>
+																	<entry>
+																		<String>fragment</String>
+																		<String>&lt;div xmlns="http://www.tei-c.org/ns/1.0" met = "${ask('Metrum',combobox, ('hexameter':'Hexameter';'pentameter':'Pentameter';'elegisches distichon':'Elegisches Distichon';'erste asklepiadische strophe':'Erste asklepiadische Strophe';'zweite asklepiadische strophe':'Zweite asklepiadische Strophe';'dritte asklepiadische strophe':'Dritte asklepiadische Strophe';'vierte asklepiadische strophe':'Vierte asklepiadische Strophe';'fünfte asklepiadische strophe':'Fünfte asklepiadische Strophe';'erste sapphische strophe':'Erste sapphische Strophe';'zweite sapphische strophe':'Zweite sapphische Strophe';'alkäische strophe':'Alkäische Strophe';'erste archilochische strophe':'Erste archilolische Strophe';'zweite archilochische strophe':'Zweite archilolische Strophe';'dritte archilochische strophe':'Dritte archilolische Strophe';'hipponakteische strophe':'Hipponakteische Strophe';'ionische strophe':'Ionische Strophe';'iambischer trimeter und iambischer dimeter alternierend':'Iambischer Trimeter und iambischer Dimeter alternierend';'iambischer trimeter und elgiambus alternierend':'Iambischer Trimeter und Elegiambus alternierend';'hexameter und iambelegus alternierend':'Hexameter und Iambelegus alternierend';'hexameter und iambischer dimeter alternierend':'Hexameter und iambischer Dimeter alternierend';'hexameter und iambischer trimeter alternierend':'Hexameter und iambischer Trimeter alternierend';'iambischer trimeter':'Iambischer Trimeter';'hemiepes und adoneus':'Hemiepes und Adoneus';'hexameter und daktylischer tetrameter alternierend':'Hexameter und daktylischer Tetrameter alternierend';'phalaeceus/hendekasyllabus':'Phalaeceus/Hendekasyllabus';'anapästischer dimeter':'Anapästischer Dimeter';'glyconeus':'Glyconeus';'adoneus':'Adoneus';'hinkiambus(choliambus)':'Himkiambus (Choliambus)';'asklepiadeus und pherecrateus alternierend':'Asklepiadeus und Pherecrateus alternnierend';'sapphischer elfsilbler und glyconeus alternierend':'Sapphischer Elfsilbler und Glyconeus alternierend';'katalektischer iambischer dimeter und pherecrateus alternierend':'Katalektischer iambischer Dimeter und Pherecrateus alternierend';'katalektischer anapästischer dimeter (paroemiakos)':'Katalektischer anapästischer Dimeter (Paroemiakos)';'sapphischer elfsilbler':'Sapphischer Elfsilbler';'metrum falsicum':'Metrum Falsicum';'iambischer trimeter und pentameter alternierend':'Iambischer Trimeter und Pentameter alternierend';'phalaeceus (hendekasyllabus) und alkäischer zehnsilbler alternierend':'Phalaeceus (Hendekasyllabus) und alkäischer Zehnsilbler alternierend';'katalektischer daktylischer tetrameter und ionischer dimeter':'Katalektischer dakytlischer Tetrameter und ionischer Dimeter'; 'ionischer dimeter':'Ionischer Dimeter'; 'asklepiadeus und iambischer dimeter alternierend':'Asklepiadeus und iambischer Dimeter alternierend';'daktylischer tetrameter und iambischer dimeter alternierend':'Daktylischer Tetrameter und iambischer Dimeter alternierend';'trochäischer und ionischer dimeter (alternierend)':'Trochäischer und ionischer Dimeter (alternierend)';'phalaeceus (hendekasyllabus) und pentameter alternierend':'Phalaeceus (Hendekasyllabus) und Pentameter alternierend';'katalektischer dakytlischer tetrameter':'Katalektischer daktylischer Tetrameter';'großer archilochius':'Großer Archilochius';'erste sapphische strophe und elegisches distichon':'Erste sapphische Strophe und elegisches Distichon';'erste sapphische strophe und hexameter':'Erste sapphische Strophe und Hexameter'),'Hexameter')}"> &lt;/div></String>
+																	</entry>
+																</serializableOrderedMap>
+															</field>
+															<field name="operationID">
+																<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+															</field>
+														</actionMode>
+													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
+											</action>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>77</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>symbol_emDash</String>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>76</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>symbol_enDash</String>
 										</field>
 									</poPatch>
 									<poPatch>
@@ -7812,6 +7722,23 @@ or ancestor-or-self::abstract</String>
 											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
 										</field>
 										<field name="index">
+											<Integer>2</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
+										</field>
+										<field name="index">
 											<Integer>1</Integer>
 										</field>
 										<field name="value">
@@ -8324,40 +8251,106 @@ or ancestor-or-self::abstract</String>
 															</field>
 														</toolbar>
 														<toolbarSeparator/>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>1</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Sonderzeichen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbar>
+															<field name="id">
+																<String>Gedicht</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String></String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>EP#0010 lg</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>EP#0011 lg@type-stanza</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>EP#0012 l</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Metriksymbole</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String></String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_metricalBreve</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_emDash</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_longOverShort</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_longOverTwoShort</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>symbol_pipe</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Metrum</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String>${framework}/resources/icons/poesie.png</String>
+															</field>
+															<field name="smallIconPath">
+																<String>${framework}/resources/icons/poesie.png</String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>insertPoemMetric</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
 																<String>Symbole</String>
@@ -8393,11 +8386,6 @@ or ancestor-or-self::abstract</String>
 																			<String>symbol_symbols</String>
 																		</field>
 																	</toolbarItem>
-																	<toolbarItem>
-																		<field name="actionID">
-																			<String>#xxx e-caudata</String>
-																		</field>
-																	</toolbarItem>
 																	<toolbarSeparator/>
 																	<toolbarItem>
 																		<field name="actionID">
@@ -8424,43 +8412,10 @@ or ancestor-or-self::abstract</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>2</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Diakritische Zeichen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
-																<String>Diakritsche Zeichen</String>
+																<String>Diakritische Zeichen</String>
 															</field>
 															<field name="type">
 																<Integer>3</Integer>
@@ -8529,40 +8484,7 @@ or ancestor-or-self::abstract</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>3</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Glyphen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
 																<String>Vorzeichen</String>
@@ -8639,40 +8561,7 @@ or ancestor-or-self::abstract</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
-													</toolbarEntry-array>
-												</field>
-											</toolbar>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/additionalToolbarsDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>4</Integer>
-										</field>
-										<field name="value">
-											<toolbar>
-												<field name="id">
-													<String>Ligaturen</String>
-												</field>
-												<field name="type">
-													<Integer>2</Integer>
-												</field>
-												<field name="largeIconPath">
-													<null/>
-												</field>
-												<field name="smallIconPath">
-													<null/>
-												</field>
-												<field name="toolbarEntriesDescriptorList">
-													<toolbarEntry-array>
+														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">
 																<String>Ligaturen</String>
@@ -8706,6 +8595,12 @@ or ancestor-or-self::abstract</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbarSeparator/>
+														<toolbarItem>
+															<field name="actionID">
+																<String>website</String>
+															</field>
+														</toolbarItem>
 													</toolbarEntry-array>
 												</field>
 											</toolbar>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+  id="EP#0012 l">
+  <a:name>Gedichtzeile einfügen</a:name>
+  <a:description>Fügt eine neue Zeile in Gedichte ein.</a:description>
+  <a:smallIconPath href="${frameworks}/narragonia-latina-oxygen/resources/icons/small_line.png"/>
+  <a:largeIconPath href="${frameworks}/narragonia-latina-oxygen/resources/icons/line.png"/>
+  <a:operations>
+    <a:operation id="InsertFragmentOperation">
+      <a:xpathCondition>ancestor-or-self::lg</a:xpathCondition>
+      <a:arguments>
+        <a:argument name="fragment"><l xmlns="http://www.tei-c.org/ns/1.0">${caret}</l></a:argument>
+      </a:arguments>
+    </a:operation>
+  </a:operations>
+  <a:enabledInReadOnlyContext>false</a:enabledInReadOnlyContext>
+</a:authorAction>
