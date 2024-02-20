@@ -23,18 +23,55 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 
 
 
-
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
     padding: 1em;
-    background-color: rgb(249, 251, 255);
+    background-color: #faf8f6;
     margin: 0.3em;
 }
 div[type="chapter"] head{
     font-weight: bold;
     font-size: large;
     padding-top: 0.7em;
+}
+
+ab[type="chapterTitle"] reg{
+    color: #8b0000;
+    font-size: large;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ab[type="chapterTitle"] orig{
+    color: #999999;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+ab::before{
+    content:"\a";
+    white-space: pre;
+}
+
+l::after {
+    content:"\a";
+    white-space: pre;
+}
+
+lg::after {
+    content:"\a";
+    white-space: pre;
+}
+
+pb {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /* Indizes */
