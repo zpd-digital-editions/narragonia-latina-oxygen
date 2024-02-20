@@ -19,7 +19,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
-@import url("../../../ediarum.BASE.edit-2.0.0/css/standard.css");
+@import url("../../../ediarum.BASE.edit/css/standard.css");
+
+
+
 
 /* Kapitel */
 div[type="chapter"]{
@@ -129,4 +132,25 @@ lg[type="stanza"]::before {
     display: block;
     content: attr(met);
     background-color: red;
+}
+
+/* Marginalie */
+ab::before, ab::after, ab[type="marginalie"] choice l::before {
+    content: "\a ";
+    white-space: pre;
+}
+
+ab[type="marginalie"] {
+    content: "Marginalie: ";
+    font-size: 0.75em;
+    line-height: 2;
+    position: relative;
+    border: 1px solid blue;
+}
+
+ab[type="marginalie"] choice l {
+    position: absolute;
+    width: 20%;
+    right: 100%;
+    text-align: left;
 }
