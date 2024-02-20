@@ -6572,41 +6572,7 @@ parent::not(p)</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>77</Integer>
-										</field>
-										<field name="value">
-											<null/>
-										</field>
-										<field name="patchHandling">
-											<String>removeIndex</String>
-										</field>
-										<field name="anchor">
-											<String>symbol_emDash</String>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>76</Integer>
-										</field>
-										<field name="value">
-											<null/>
-										</field>
-										<field name="patchHandling">
-											<String>removeIndex</String>
-										</field>
-										<field name="anchor">
-											<String>symbol_enDash</String>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>273</Integer>
+											<Integer>271</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6697,7 +6663,7 @@ or ancestor-or-self::abstract</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>274</Integer>
+											<Integer>272</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -6788,6 +6754,40 @@ or ancestor-or-self::abstract</String>
 										</field>
 										<field name="anchor">
 											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>77</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>symbol_emDash</String>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors</String>
+										</field>
+										<field name="index">
+											<Integer>76</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<String>symbol_enDash</String>
 										</field>
 									</poPatch>
 									<poPatch>
@@ -8345,6 +8345,11 @@ or ancestor-or-self::abstract</String>
 																	<toolbarItem>
 																		<field name="actionID">
 																			<String>insertPoemMetric</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>insertVerseMetric</String>
 																		</field>
 																	</toolbarItem>
 																</toolbarEntry-array>
