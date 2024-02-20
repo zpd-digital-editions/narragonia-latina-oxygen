@@ -21,8 +21,6 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 
 @import url("../../../ediarum.BASE.edit/css/standard.css");
 
-
-
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
@@ -170,6 +168,17 @@ lg[type="stanza"]::before {
     content: attr(met);
     background-color: red;
 }
+
+/* span type bullshit */
+
+span {
+    display: block;
+    background-color: #d8c8b7;
+}
+span::before {
+    display: inline-block;
+    content: attr(type) ": ";
+    background-color: #c6af98;
 
 /* Marginalie */
 ab::before, ab::after, ab[type="marginalie"] choice l::before {
