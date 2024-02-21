@@ -7793,16 +7793,6 @@ or ancestor-or-self::abstract</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>insertVerseMetric</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>insertMetric</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
 																<String>paragraph</String>
 															</field>
 														</toolbarItem>
