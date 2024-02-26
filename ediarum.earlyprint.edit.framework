@@ -4863,10 +4863,10 @@ and not(self::g)</String>
 &lt;TEI:g rend="initial"></String>
 												</field>
 												<field name="largeIconPath">
-													<String>${pdu}/icons/g-initial.png</String>
+													<String></String>
 												</field>
 												<field name="smallIconPath">
-													<String>${pdu}/icons/g-initial.png</String>
+													<String>${framework}/resources/icons/buchstabe-i.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -8590,6 +8590,11 @@ or ancestor-or-self::abstract</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbarItem>
+															<field name="actionID">
+																<String>#694 g[@rend="initial"]</String>
+															</field>
+														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
