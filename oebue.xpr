@@ -14,10 +14,6 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
-                        <String>document.types</String>
-                        <documentTypeDescriptor-array/>
-                    </entry>
-                    <entry>
                         <String>enable.project.master.files.support</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -32,7 +28,7 @@
                     </entry>
                     <entry>
                         <String>frameworks.directory.url.with.editor.variables</String>
-                        <String>file:/C:/Users/janin/Documents/Studium/Digital%20Humanities/Hiwi/ediarum%20Frameworks</String>
+                        <String>file:/C:/Users/uniwu/OneDrive/Dokumente/ediarum%20Frameworks</String>
                     </entry>
                     <entry>
                         <String>key.custom.editor.variables.option.pane</String>
@@ -359,7 +355,7 @@
     </meta>
     <projectTree name="oebue.xpr">
         <folder path="."/>
-        <file name="http://Herbst:9.1.97;301;139;430;266;236;89;301;288;91;244;149;173;210;218;258;288;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
-        <file name="http://Herbst:9.1.97;301;139;430;266;236;89;301;288;91;244;149;173;210;218;258;288;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
+        <file name="http://Herbst:9.1.97;300;140;432;266;283;139;303;288;93;248;193;218;210;218;251;331;327;269;322;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.97;300;140;432;266;283;139;303;288;93;248;193;218;210;218;251;331;327;269;322;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
     </projectTree>
 </project>
