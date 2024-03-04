@@ -49,6 +49,7 @@ lg[type="poem"]:before{
 lg[type="poem"]{
     margin-left: 2em;
     text-align: left;
+    color: gray;
 }
 lg[type="stanza"]{
     margin-top: 2em;
@@ -60,6 +61,9 @@ lg[type="poem"]:after{
     border-bottom: 0.05em solid;
     margin-left: 8em;
     margin-right: 8em;
+}
+head > lg[type="poem"]{
+    font-size:large;
 }
 
 /* Indizes */
