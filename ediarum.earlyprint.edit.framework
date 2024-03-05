@@ -6869,6 +6869,11 @@ or ancestor-or-self::abstract</String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
+														<menuItem>
+															<field name="actionID">
+																<String>hi[color]</String>
+															</field>
+														</menuItem>
 														<menu>
 															<field name="label">
 																<String>Holzschnitte</String>
