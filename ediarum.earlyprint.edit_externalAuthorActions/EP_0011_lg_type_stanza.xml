@@ -11,7 +11,8 @@
     <a:operation id="InsertFragmentOperation">
       <a:xpathCondition>self::lg[@type="poem"]</a:xpathCondition>
       <a:arguments>
-        <a:argument name="fragment"><lg xmlns="http://www.tei-c.org/ns/1.0" type="stanza"><l>${caret}</l></lg></a:argument>
+        <a:argument name="fragment"><lg xmlns="http://www.tei-c.org/ns/1.0" type="stanza"><l>${caret}</l>
+</lg></a:argument>
       </a:arguments>
     </a:operation>
   </a:operations>

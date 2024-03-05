@@ -21,7 +21,6 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 
 @import url("../../../ediarum.BASE.edit/css/standard.css");
 
-
 @import url('https://fonts.cdnfonts.com/css/junicode');
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
@@ -30,7 +29,6 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
     font-family: 'Junicode', sans-serif;
                                                 
 }
-
 
 /* Kapitel */
 div[type="chapter"]{
