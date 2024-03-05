@@ -20,6 +20,7 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
 @import url("../../../ediarum.BASE.edit/css/standard.css");
+
 @import url('https://fonts.cdnfonts.com/css/junicode');
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
@@ -45,6 +46,37 @@ div[type="chapter"] head{
     padding-top: 0.7em;
 }
 
+text ab[style^=text-align] {
+    content:attr(style);
+}
+
+/* Gedichte */
+
+lg[type="poem"]:before{
+    display:block;
+    content:attr(met);
+    background-color:lightgreen;
+}
+
+lg[type="poem"]{
+    margin-left: 2em;
+    text-align: left;
+    color: gray;
+}
+lg[type="stanza"]{
+    margin-top: 2em;
+}
+lg[type="poem"]:after{
+    content:"";
+    display: block;
+    margin-bottom: 1em;
+    border-bottom: 0.05em solid;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+head > lg[type="poem"]{
+    font-size:large;
+=======
 ab[type="chapterTitle"] reg{
     color: #8b0000;
     font-size: large;
