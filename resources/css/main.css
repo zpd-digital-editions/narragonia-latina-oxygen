@@ -20,18 +20,71 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
 @import url("../../../ediarum.BASE.edit/css/standard.css");
+@import url('https://fonts.cdnfonts.com/css/junicode');
+
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+:root {
+    font-family: 'Junicode', sans-serif;
+                                                
+}
+
+                
+
 
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
     padding: 1em;
-    background-color: rgb(249, 251, 255);
+    background-color: #faf8f6;
     margin: 0.3em;
 }
 div[type="chapter"] head{
     font-weight: bold;
     font-size: large;
     padding-top: 0.7em;
+}
+
+ab[type="chapterTitle"] reg{
+    color: #8b0000;
+    font-size: large;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ab[type="chapterTitle"] orig{
+    color: #999999;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+ab::before{
+    content:"\a";
+    white-space: pre;
+}
+
+l {
+    -oxy-display-tags: none;
+}
+
+l::after {
+    content:"\a";
+    white-space: pre;
+}
+
+lg::after {
+    content:"\a";
+    white-space: pre;
+}
+
+pb {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /* Indizes */
@@ -128,3 +181,83 @@ text cb{
     border: 1px solid black;
     padding: 2px;
 }*/
+
+lg[type="stanza"]::before {
+    display: block;
+    content: attr(met);
+    background-color: red;
+}
+
+
+
+/* header */
+title[type="main"] {
+    text-decoration: underline;  
+}
+
+author {
+    content: "Autor: ";
+}
+
+titleStatement {
+    display: inline-block;
+}
+
+titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before {
+    content:"\a";
+    white-space: pre;
+}
+
+sourceDesc titleStmt {
+    visibility: hidden;
+}
+
+titleStatement::after {
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+oxy|comment {
+    display:none !important;
+}
+
+ref {
+    content: "Referenz: " attr(target);
+}
+
+language {
+    content: "Sprache: ";
+}
+
+span {
+    display: inline-block;
+    background-color: #d8c8b7;
+    -oxy-display-tags: none;
+}
+span::before {
+    display: inline-block;
+    content: attr(type) ": ";
+    background-color: #c6af98;
+
+/* Marginalie */
+ab::before, ab::after, ab[type="marginalie"] choice l::before {
+    content: "\a ";
+    white-space: pre;
+}
+
+ab[type="marginalie"] {
+    content: "Marginalie: ";
+    font-size: 0.75em;
+    line-height: 2;
+    position: relative;
+    border: 1px solid blue;
+}
+
+ab[type="marginalie"] choice l {
+    position: absolute;
+    width: 20%;
+    right: 100%;
+    text-align: left;
+
+}
