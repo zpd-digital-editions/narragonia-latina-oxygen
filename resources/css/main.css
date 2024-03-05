@@ -21,6 +21,7 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 
 @import url("../../../ediarum.BASE.edit/css/standard.css");
 
+
 @import url('https://fonts.cdnfonts.com/css/junicode');
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
@@ -29,8 +30,6 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
     font-family: 'Junicode', sans-serif;
                                                 
 }
-
-                
 
 
 /* Kapitel */
@@ -118,6 +117,20 @@ pb {
     margin: 1em 0;
     padding: 0;
 }
+
+/* Initiale */
+g[style="font-size=big"]{
+    font-size: xx-large;
+}
+
+g[style="font-size=medium"]{
+    font-size: x-large;
+}
+
+g[style="font-size=small"]{
+    font-size: large;
+}
+
 
 /* Indizes */
 text persName::before,
