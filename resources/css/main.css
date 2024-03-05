@@ -20,8 +20,16 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
 @import url("../../../ediarum.BASE.edit/css/standard.css");
+@import url('https://fonts.cdnfonts.com/css/junicode');
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+:root {
+    font-family: 'Junicode', sans-serif;
+                                                
+}
+
+                
 
 
 /* Kapitel */
@@ -54,6 +62,10 @@ ab[type="chapterTitle"] orig{
 ab::before{
     content:"\a";
     white-space: pre;
+}
+
+l {
+    -oxy-display-tags: none;
 }
 
 l::after {
@@ -215,8 +227,9 @@ language {
 }
 
 span {
-    display: block;
+    display: inline-block;
     background-color: #d8c8b7;
+    -oxy-display-tags: none;
 }
 span::before {
     display: inline-block;
