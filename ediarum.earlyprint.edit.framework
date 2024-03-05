@@ -4863,10 +4863,10 @@ and not(self::g)</String>
 &lt;TEI:g rend="initial"></String>
 												</field>
 												<field name="largeIconPath">
-													<String>${pdu}/icons/g-initial.png</String>
+													<String></String>
 												</field>
 												<field name="smallIconPath">
-													<String>${pdu}/icons/g-initial.png</String>
+													<String>${framework}/resources/icons/buchstabe-i.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -4886,7 +4886,7 @@ and not(self::g)</String>
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;g rend="initial" xmlns="http://www.tei-c.org/ns/1.0"/></String>
+																		<String>&lt;g rend="initial" xmlns="http://www.tei-c.org/ns/1.0" style="font-size=${ask('Schriftgröße der Initiale', radio, ('big':'Big';'medium':'Medium';'small':'Small'),'big')}"/></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
@@ -6869,6 +6869,11 @@ or ancestor-or-self::abstract</String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
+														<menuItem>
+															<field name="actionID">
+																<String>hi[color]</String>
+															</field>
+														</menuItem>
 														<menu>
 															<field name="label">
 																<String>Holzschnitte</String>
@@ -7793,16 +7798,6 @@ or ancestor-or-self::abstract</String>
 													<toolbarEntry-array>
 														<toolbarItem>
 															<field name="actionID">
-																<String>insertVerseMetric</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
-																<String>insertMetric</String>
-															</field>
-														</toolbarItem>
-														<toolbarItem>
-															<field name="actionID">
 																<String>paragraph</String>
 															</field>
 														</toolbarItem>
@@ -8600,6 +8595,11 @@ or ancestor-or-self::abstract</String>
 																</toolbarEntry-array>
 															</field>
 														</toolbar>
+														<toolbarItem>
+															<field name="actionID">
+																<String>#694 g[@rend="initial"]</String>
+															</field>
+														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbarItem>
 															<field name="actionID">
