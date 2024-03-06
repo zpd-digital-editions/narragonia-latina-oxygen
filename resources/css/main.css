@@ -291,7 +291,7 @@ titleStatement {
     display: inline-block;
 }
 
-titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before {
+titleStatement::before, editor::before, title::after, teiHeader p, repository::before {
     content:"\a";
     white-space: pre;
 }
@@ -311,7 +311,28 @@ oxy|comment {
 }
 
 ref {
-    content: "Referenz: " attr(target);
+    border-radius: 4px;
+    border: 1px dashed #00C6FF;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+ref::after{
+    content: "*";
+    color: #00C6FF;
+}
+
+ref:hover::after {
+  content: "Referenziert: " attr(target);
+  position: relative;
+  bottom: 0;
+  background: transparent !important;
+  border: none !important;
+  padding:2px;
+  color: #A9A9A9;
+  font-style:italic;
+  background-color: coral;
+  display: inline-block;
 }
 
 language {
@@ -349,3 +370,4 @@ ab[type="marginalie"] choice l {
     text-align: left;
 
 }
+
