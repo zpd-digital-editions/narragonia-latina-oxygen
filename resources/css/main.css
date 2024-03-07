@@ -63,11 +63,6 @@ ab::before{
     white-space: pre;
 }
 
-l::after {
-    content:"\a";
-    white-space: pre;
-}
-
 lg::after {
     content:"\a";
     white-space: pre;
@@ -133,11 +128,7 @@ ab::before{
 
 l {
     -oxy-display-tags: none;
-}
-
-l::after {
-    content:"\a";
-    white-space: pre;
+    padding-bottom: 0.2em;
 }
 
 lg::after {
