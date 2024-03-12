@@ -19,7 +19,17 @@ You should have received a copy of the GNU Lesser General Public License
 along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
-@import url("../../../ediarum.BASE.edit-2.0.0/css/standard.css");
+@import url("../../../ediarum.BASE.edit/css/standard.css");
+
+/* teiHeader */
+teiHeader title:before{
+    content: "Titel:"
+        oxy_textfield(
+            edit, "#text",
+            color, "black",
+            columns, 40
+            fontInherit,true);
+}
 
 /* Kapitel */
 div[type="chapter"]{
