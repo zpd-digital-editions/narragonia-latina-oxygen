@@ -22,13 +22,24 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 @import url("../../../ediarum.BASE.edit/css/standard.css");
 
 /* teiHeader */
-teiHeader title:before{
-    content: "Titel:"
+teiHeader title[type="main"]{
+    content: 
+        oxy_label(text, "Titel:")
+        oxy_textfield(
+            edit, '#text',
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+teiHeader title[type="sub"]{
+    content:  
+        oxy_label(text, "Untertitel:")
         oxy_textfield(
             edit, "#text",
-            color, "black",
-            columns, 40
+            columns, 40,
             fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 /* Kapitel */
