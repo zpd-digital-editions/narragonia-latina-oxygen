@@ -32,6 +32,11 @@ teiHeader title[type="main"]{
      visibility: -oxy-collapse-text;
 }
 
+teiHeader title[type="main"]::after{
+    content: "\A ";
+    white-space:pre;
+}
+
 teiHeader title[type="sub"]{
     content:  
         oxy_label(text, "Untertitel:")
@@ -41,7 +46,62 @@ teiHeader title[type="sub"]{
             fontInherit,true);
      visibility: -oxy-collapse-text;
 }
+teiHeader msDesc{
+    content:
+        oxy_label(text,"Manuskriptbeschreibung:\A ")
+}
+teiHeader settlement{
+    content:
+        oxy_label(text, "Niederlassung:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+}
 
+teiHeader settlement::after{
+    content:"\A ";
+    white-space:pre;
+}
+
+teiHeader repository{
+     content:
+        oxy_label(text, "Repositorium:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+teiHeader repository::after{
+    content:"\A ";
+    white-space:pre;
+}
+teiHeader physDesc{
+    content:
+        oxy_label(text,"\A ");
+    white-space:pre;
+}
+teiHeader typeDesc{
+    content:
+        oxy_label(text, "Schriftbeschreibung:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+teiHeader p{
+    content:
+        oxy_label(text, "Beschreibung:")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
