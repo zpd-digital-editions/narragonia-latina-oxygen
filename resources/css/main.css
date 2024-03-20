@@ -29,287 +29,7 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
     font-family: 'Junicode', sans-serif;
                                                 
 }
-
-
-/* teiHeader */
-teiHeader title[type="main"]{
-    content: 
-        oxy_label(text, "Titel:")
-        oxy_textfield(
-            edit, '#text',
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-
-teiHeader title[type="main"]::after{
-    content: "\A ";
-    white-space:pre;
-}
-
-teiHeader title[type="sub"]{
-    content:  
-        oxy_label(text, "Untertitel:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader title[type="sub"]::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader author{
-    content:
-        oxy_label(text,"Autor:\A ")
-}
-teiHeader author::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader surname{
-    content:
-        oxy_label(text, "Nachname:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader surname::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader forename{
-    content:
-        oxy_label(text, "Vorname:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader forename::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader editor{
-    content:"Editor:\A ";
-    white-space:pre;
-}
-teiHeader respStmt{
-    content:"Bereitstellende Institution:\A ";
-    white-space:pre;
-}
-teiHeader orgName{
-    content:
-        oxy_label(text, "Name der Institution:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader orgName[role="hostingInstitution"]{
-    content:
-        oxy_label(text, "Name der ausrichtenden Institution:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader orgName[role="project"]{
-    content:
-        oxy_label(text, "Name des Projekts:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader orgName::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader note{
-    content:
-        oxy_label(text, "Bemerkung zur Bereitstellung:")
-        oxy_textArea(
-            edit, "#text",
-            columns, 60,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader edition{
-    content:
-        oxy_label(text, "Edition:")
-            oxy_textArea(
-                edit, "#text",
-                columns, 60,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader publisher{
-    content:
-        oxy_label(text, "Herausgeber:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader email{
-    content:
-        oxy_label(text, "Email:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader addrLine{
-    content:
-        oxy_label(text, "Adresse:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader pubPlace{
-    content:
-        oxy_label(text, "Publikationsort:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader date[type="publication"]{
-    content:
-        oxy_label(text, "Veröffentlichung:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader date[type="firstpublication"]{
-    content:
-        oxy_label(text, "Erstveröffentlichung:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader availability{
-    content:"Verfügbarkeit:\A ";
-    white-space:pre;
-}
-teiHeader idno{
-    content:"Identifikation: \A ";
-    white-space:pre;
-}
-teiHeader idno[type="URLWeb"]{
-    content:
-        oxy_label(text, "URL:")
-            oxy_textfield(
-                edit, "#text",
-                columns, 60,
-                fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader title[level]{
-    content:  
-        oxy_label(text, "Titel:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader title[level]::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader msDesc{
-    content:
-        oxy_label(text,"Manuskriptbeschreibung:\A ")
-}
-teiHeader settlement{
-    content:
-        oxy_label(text, "Niederlassung:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-    visibility: -oxy-collapse-text;
-}
-
-teiHeader settlement::after{
-    content:"\A ";
-    white-space:pre;
-}
-
-teiHeader repository{
-     content:
-        oxy_label(text, "Repositorium:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-
-teiHeader repository::after{
-    content:"\A ";
-    white-space:pre;
-}
-teiHeader physDesc{
-    content:
-        oxy_label(text,"\A ");
-    white-space:pre;
-}
-teiHeader typeDesc{
-    content:
-        oxy_label(text, "Schriftbeschreibung:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader p{
-    content:
-        oxy_label(text, "Beschreibung:")
-        oxy_textArea(
-            edit, "#text",
-            columns, 60,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-teiHeader encodingDesc{
-    content:"Kodierungsbeschreibung:\A ";
-    white-space:pre;
-}
-teiHeader profileDesc{
-    content:"Textprofilbeschreibung:\A ";
-    white-space:pre;
-}
-teiHeader language{
- content:
-        oxy_label(text, "Sprache:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
-
-                
+  
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
@@ -495,20 +215,85 @@ lg[type="stanza"]::before {
 
 /* header */
 title[type="main"] {
-    text-decoration: underline;  
+    text-decoration: underline;
+    content: 
+        oxy_label(text, "Titel:")
+        oxy_textfield(
+            edit, '#text',
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+title[type="sub"]{
+    content:  
+        oxy_label(text, "Untertitel:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 author {
-    content: "Autor: ";
+    content: "Autor: \a ";
+}
+
+surname{
+    content:
+        oxy_label(text, "Nachname: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+forename{
+    content:
+        oxy_label(text, "Vorname:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 titleStatement {
     display: inline-block;
 }
 
-titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before {
+titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before, surname::after, forename::after, orgName::after, availability::after, idno::after,settlement::before, settlement::after, repository::after, physDesc::after, encodingDesc::after {
     content:"\a";
     white-space: pre;
+}
+
+orgName{
+    content:
+        oxy_label(text, "Name der Institution: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+orgName[role="hostingInstitution"]{
+    content:
+        oxy_label(text, "Name der ausrichtenden Institution: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+orgName[role="project"]{
+    content:
+        oxy_label(text, "Name des Projekts: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 sourceDesc titleStmt {
@@ -525,12 +310,171 @@ oxy|comment {
     display:none !important;
 }
 
+teiHeader note{
+    content:
+        oxy_label(text, "Bemerkung zur Bereitstellung: ")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+edition{
+    content:
+        oxy_label(text, "Edition: ")
+            oxy_textArea(
+                edit, "#text",
+                columns, 60,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
 ref {
     content: "Referenz: " attr(target);
 }
 
+publisher{
+    content:
+        oxy_label(text, "Herausgeber: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+email{
+    content:
+        oxy_label(text, "Email: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+addrLine{
+    content:
+        oxy_label(text, "Adresse: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+pubPlace{
+    content:
+        oxy_label(text, "Publikationsort: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+date[type="publication"]{
+    content:
+        oxy_label(text, "Veröffentlichung: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+date[type="firstpublication"]{
+    content:
+        oxy_label(text, "Erstveröffentlichung: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+availability{
+    content:"Verfügbarkeit: ";
+}
+
+idno {
+    content:"Identifikation: ";
+}
+
+idno[type="URLWeb"]{
+    content:
+        oxy_label(text, "URL: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 60,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+title[level]{
+    content:  
+        oxy_label(text, "Titel: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+settlement{
+    content:
+        oxy_label(text, "Standort: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+}
+
+repository{
+     content:
+        oxy_label(text, "Repositorium: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+typeDesc{
+    content:
+        oxy_label(text, "Schriftbeschreibung: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+teiHeader p{
+    content:
+        oxy_label(text, "Beschreibung: ")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+encodingDesc{
+    content:"Kodierungsbeschreibung: ";
+}
+
+profileDesc{
+    content:"Textprofilbeschreibung: \a ";
+}
+
 language {
     content: "Sprache: ";
+    oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 span {
