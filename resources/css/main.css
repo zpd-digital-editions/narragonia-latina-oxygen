@@ -19,13 +19,22 @@ You should have received a copy of the GNU Lesser General Public License
 along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
-@import url("../../../ediarum.BASE.edit-2.0.0/css/standard.css");
+@import url("../../../ediarum.BASE.edit/css/standard.css");
+
+@import url('https://fonts.cdnfonts.com/css/junicode');
+
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+:root {
+    font-family: 'Junicode', sans-serif;
+                                                
+}
 
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
     padding: 1em;
-    background-color: rgb(249, 251, 255);
+    background-color: #faf8f6;
     margin: 0.3em;
 }
 div[type="chapter"] head{
@@ -34,6 +43,39 @@ div[type="chapter"] head{
     padding-top: 0.7em;
 }
 
+
+ab[type="chapterTitle"] reg{
+    color: #8b0000;
+    font-size: large;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ab[type="chapterTitle"] orig{
+    color: #999999;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+ab::before{
+    content:"\a";
+    white-space: pre;
+}
+
+lg::after {
+    content:"\a";
+    white-space: pre;
+}
+
+pb {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 text ab[style^=text-align] {
     content:attr(style);
 }
@@ -49,6 +91,7 @@ lg[type="poem"]:before{
 lg[type="poem"]{
     margin-left: 2em;
     text-align: left;
+    color: gray;
 }
 lg[type="stanza"]{
     margin-top: 2em;
@@ -61,6 +104,60 @@ lg[type="poem"]:after{
     margin-left: 8em;
     margin-right: 8em;
 }
+head > lg[type="poem"]{
+    font-size:large;
+
+ab[type="chapterTitle"] reg{
+    color: #8b0000;
+    font-size: large;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ab[type="chapterTitle"] orig{
+    color: #999999;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+ab::before{
+    content:"\a";
+    white-space: pre;
+}
+
+l {
+    -oxy-display-tags: none;
+    padding-bottom: 0.2em;
+}
+
+lg::after {
+    content:"\a";
+    white-space: pre;
+}
+
+pb {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Initiale */
+g[style="big"]{
+    font-size: xx-large;
+}
+
+g[style="medium"]{
+    font-size: x-large;
+}
+
+g[style="=small"]{
+    font-size: large;
+}
+
 
 /* Indizes */
 text persName::before,
@@ -135,7 +232,11 @@ text note[type="marginalia"][place="bottom_outer"]::after{
 text note[type="marginalia"][place="intercolumn"]::after{
     content: url('../icons/intercolumn.png');
 }
-
+/* Schriftfarbe */
+text hi[style^=color] {
+    color: oxy_substring(attr(style),6, 
+oxy_indexof(attr(style),";"));
+}
 /* Spalten */
 text cb{
     height: 2.5em;
@@ -158,3 +259,106 @@ lg[type="stanza"]::before {
     content: attr(met);
     background-color: red;
 }
+
+
+/* span type bullshit */
+
+span {
+    display: block;
+    background-color: #d8c8b7;
+
+
+
+/* header */
+title[type="main"] {
+    text-decoration: underline;  
+}
+
+author {
+    content: "Autor: ";
+}
+
+titleStatement {
+    display: inline-block;
+}
+
+titleStatement::before, editor::before, title::after, teiHeader p, repository::before {
+    content:"\a";
+    white-space: pre;
+}
+
+sourceDesc titleStmt {
+    visibility: hidden;
+}
+
+titleStatement::after {
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+oxy|comment {
+    display:none !important;
+}
+
+ref {
+    border-radius: 4px;
+    border: 1px dashed #00C6FF;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+ref::after{
+    content: "*";
+    color: #00C6FF;
+}
+
+ref:hover::after {
+  content: "Referenziert: " attr(target);
+  position: relative;
+  bottom: 0;
+  background: transparent !important;
+  border: none !important;
+  padding:2px;
+  color: #A9A9A9;
+  font-style:italic;
+  background-color: coral;
+  display: inline-block;
+}
+
+language {
+    content: "Sprache: ";
+}
+
+span {
+    display: inline-block;
+    background-color: #d8c8b7;
+    -oxy-display-tags: none;
+}
+span::before {
+    display: inline-block;
+    content: attr(type) ": ";
+    background-color: #c6af98;
+
+/* Marginalie */
+ab::before, ab::after, ab[type="marginalie"] choice l::before {
+    content: "\a ";
+    white-space: pre;
+}
+
+ab[type="marginalie"] {
+    content: "Marginalie: ";
+    font-size: 0.75em;
+    line-height: 2;
+    position: relative;
+    border: 1px solid blue;
+}
+
+ab[type="marginalie"] choice l {
+    position: absolute;
+    width: 20%;
+    right: 100%;
+    text-align: left;
+
+}
+

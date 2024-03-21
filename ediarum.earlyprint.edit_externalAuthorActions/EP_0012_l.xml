@@ -11,7 +11,8 @@
     <a:operation id="InsertFragmentOperation">
       <a:xpathCondition>ancestor-or-self::lg</a:xpathCondition>
       <a:arguments>
-        <a:argument name="fragment"><l xmlns="http://www.tei-c.org/ns/1.0">${caret}</l></a:argument>
+        <a:argument name="fragment"><l xmlns="http://www.tei-c.org/ns/1.0">${caret}</l>
+</a:argument>
       </a:arguments>
     </a:operation>
   </a:operations>

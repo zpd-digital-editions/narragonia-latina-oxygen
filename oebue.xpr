@@ -10,10 +10,6 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
-                        <String>document.type.use.grammar.cache</String>
-                        <Boolean>false</Boolean>
-                    </entry>
-                    <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array/>
                     </entry>
