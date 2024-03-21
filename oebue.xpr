@@ -10,6 +10,10 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
+                        <String>document.types</String>
+                        <documentTypeDescriptor-array/>
+                    </entry>
+                    <entry>
                         <String>enable.project.master.files.support</String>
                         <Boolean>true</Boolean>
                     </entry>

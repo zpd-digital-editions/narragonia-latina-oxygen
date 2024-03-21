@@ -146,15 +146,15 @@ pb {
 }
 
 /* Initiale */
-g[style="font-size=big"]{
+g[style="big"]{
     font-size: xx-large;
 }
 
-g[style="font-size=medium"]{
+g[style="medium"]{
     font-size: x-large;
 }
 
-g[style="font-size=small"]{
+g[style="=small"]{
     font-size: large;
 }
 

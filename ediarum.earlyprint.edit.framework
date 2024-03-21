@@ -4886,7 +4886,7 @@ and not(self::g)</String>
 																<serializableOrderedMap>
 																	<entry>
 																		<String>fragment</String>
-																		<String>&lt;g rend="initial" xmlns="http://www.tei-c.org/ns/1.0" style="font-size=${ask('Schriftgröße der Initiale', radio, ('big':'Big';'medium':'Medium';'small':'Small'),'big')}"/></String>
+																		<String>&lt;g rend="initial" xmlns="http://www.tei-c.org/ns/1.0" style="${ask('Schriftgröße der Initiale', radio, ('big':'Big';'medium':'Medium';'small':'Small'),'big')}"/></String>
 																	</entry>
 																</serializableOrderedMap>
 															</field>
