@@ -235,8 +235,8 @@ title[type="sub"]{
      visibility: -oxy-collapse-text;
 }
 
-author {
-    content: "Autor: \a ";
+author persName{
+    content: "Autor/in: \a ";
 }
 
 surname{
@@ -249,6 +249,9 @@ surname{
      visibility: -oxy-collapse-text;
 }
 
+surname::after {
+    display:none;
+}
 forename{
     content:
         oxy_label(text, "Vorname:")
@@ -257,6 +260,18 @@ forename{
             columns, 40,
             fontInherit,true);
      visibility: -oxy-collapse-text;
+}
+
+editor {
+    content:"Editor: \a ";
+}
+
+editor::after {
+    display:none;
+}
+
+respStmt note::before, respStmt note::after {
+    display:none;
 }
 
 titleStatement {
@@ -296,10 +311,6 @@ orgName[role="project"]{
      visibility: -oxy-collapse-text;
 }
 
-sourceDesc titleStmt {
-    visibility: hidden;
-}
-
 titleStatement::after {
     border-top: 1px solid #ccc;
     margin: 1em 0;
@@ -308,6 +319,10 @@ titleStatement::after {
 
 oxy|comment {
     display:none !important;
+}
+
+msDesc {
+    content: "Manuskriptbeschreibung: " !important;
 }
 
 teiHeader note{
@@ -319,6 +334,25 @@ teiHeader note{
             fontInherit,true);
      visibility: -oxy-collapse-text;
 }
+
+biblFull {
+    content: "Bibliografische Beschreibung: \a ";
+}
+
+sourceDesc titleStmt {
+    display:none;
+}
+
+editionStmt {
+    content:"Angaben zur Ausgabe: \a ";
+    display: block !important;
+}
+
+publicationStmt {
+    content:"Angaben zur Veröffentlichung: \a ";
+    display: block !important;
+}
+
 edition{
     content:
         oxy_label(text, "Edition: ")
@@ -382,13 +416,13 @@ date[type="publication"]{
                 fontInherit,true);
      visibility: -oxy-collapse-text;
 }
-date[type="firstpublication"]{
+date[type="firstPublication"]{
     content:
         oxy_label(text, "Erstveröffentlichung: ")
-            oxy_textfield(
-                edit, "#text",
-                columns, 40,
-                fontInherit,true);
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
      visibility: -oxy-collapse-text;
 }
 
@@ -396,8 +430,8 @@ availability{
     content:"Verfügbarkeit: ";
 }
 
-idno {
-    content:"Identifikation: ";
+idno:has(>idno[resp]) {
+    content:"Identifikation: \a ";
 }
 
 idno[type="URLWeb"]{
@@ -440,9 +474,13 @@ repository{
      visibility: -oxy-collapse-text;
 }
 
+physDesc::before {
+    content: "Physische Beschreibung: " !important;
+}
+
 typeDesc{
     content:
-        oxy_label(text, "Schriftbeschreibung: ")
+        oxy_label(text, "Schriftbeschreibung: ") !important;
         oxy_textfield(
             edit, "#text",
             columns, 40,
