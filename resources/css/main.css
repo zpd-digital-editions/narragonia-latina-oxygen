@@ -45,11 +45,11 @@ titleStmt, TEI::before{
     border: 1px solid #5A5A5A;
     border-radius: 4px;
     padding: 1em;
+    margin: 0 0 0.5em 0;
 }
 titleStmt, teiHeader, fileDesc{
     content: "";
     display: block;
-    margin: 0px !important;
 }
 titleStmt{
     display: flex;
