@@ -30,10 +30,29 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 }
   
 /* TEIHEADER */
-titleStmt{
-    display: flex;
+TEI::before{
+    content: "TEI Dokument\a" "ID" 
+        oxy_textfield(
+            edit, '@xml:id',
+            columns, 40,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+    display:block;;
+    color:  #5A5A5A;
+    font-size: 1.2em;
+}
+titleStmt, TEI::before{
     border: 1px solid #5A5A5A;
     border-radius: 4px;
+    padding: 1em;
+}
+titleStmt, teiHeader, fileDesc{
+    content: "";
+    display: block;
+    margin: 0px !important;
+}
+titleStmt{
+    display: flex;
     -oxy-foldable: true;
 }
 titleStmt::before, title[type="main"]::before, title[type="sub"]::before{
@@ -306,7 +325,7 @@ titleStatement {
     display: inline-block;
 }
 
-titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before, surname::after, forename::after, orgName::after, availability::after, idno::after,settlement::before, settlement::after, repository::after, physDesc::after, encodingDesc::after {
+editor::before, ref::before, teiHeader p, repository::before, surname::after, forename::after, orgName::after, availability::after, idno::after,settlement::before, settlement::after, repository::after, physDesc::after, encodingDesc::after {
     content:"\a";
     white-space: pre;
 }
