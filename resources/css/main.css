@@ -61,6 +61,15 @@ titleStmt::before, title[type="main"]::before, title[type="sub"]::before{
 }
 titleStmt::before{
     content: "Titelei";
+    margin: 0 0 0.5em 0;
+}
+titleStmt::after{
+    content: oxy_button(action, oxy_action(
+        name, "Add Author",
+        description, "Inserts personal dto the TEIHeader",
+        operation, "InsertFragmentOperation",
+        arg-fragment, '<author xmlns="http://www.tei-c.org/ns/1.0"><persName><surname></surname><forename></forename></persName></author>'
+    ));
 }
 title[type="main"]::before {
     content: "Titel";
