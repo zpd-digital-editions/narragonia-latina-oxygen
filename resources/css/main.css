@@ -26,8 +26,55 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
 
 :root {
-    font-family: 'Junicode', sans-serif;
-                                                
+    font-family: 'Junicode', sans-serif;                                         
+}
+  
+/* TEIHEADER */
+titleStmt{
+    display: flex;
+    border: 1px solid #5A5A5A;
+    border-radius: 4px;
+    -oxy-foldable: true;
+}
+titleStmt::before, title[type="main"]::before, title[type="sub"]::before{
+    display: block;
+    color: #5A5A5A;
+}
+titleStmt::before{
+    content: "Titelei";
+}
+title[type="main"]::before {
+    content: "Titel";
+}
+title[type="sub"]::before{
+    content: "Untertitel";
+}
+title[type="main"] {
+    content: 
+        oxy_textfield(
+            edit, '#text',
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+     margin: 0;
+}
+title[type="sub"]{
+    content:  
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+     margin: 0;
+}
+title[level]{
+    content:  
+        oxy_label(text, "Titel", styles, "display: block;")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
   
 /* Kapitel */
@@ -214,26 +261,7 @@ lg[type="stanza"]::before {
 
 
 /* header */
-title[type="main"] {
-    text-decoration: underline;
-    content: 
-        oxy_label(text, "Titel:")
-        oxy_textfield(
-            edit, '#text',
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
 
-title[type="sub"]{
-    content:  
-        oxy_label(text, "Untertitel:")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
 
 author persName{
     content: "Autor/in: \a ";
@@ -311,11 +339,6 @@ orgName[role="project"]{
      visibility: -oxy-collapse-text;
 }
 
-titleStatement::after {
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
 oxy|comment {
     display:none !important;
@@ -444,15 +467,7 @@ idno[type="URLWeb"]{
      visibility: -oxy-collapse-text;
 }
 
-title[level]{
-    content:  
-        oxy_label(text, "Titel: ")
-        oxy_textfield(
-            edit, "#text",
-            columns, 40,
-            fontInherit,true);
-     visibility: -oxy-collapse-text;
-}
+
 
 settlement{
     content:
@@ -495,7 +510,6 @@ teiHeader p{
             edit, "#text",
             columns, 60,
             fontInherit,true);
-     visibility: -oxy-collapse-text;
 }
 
 encodingDesc{
