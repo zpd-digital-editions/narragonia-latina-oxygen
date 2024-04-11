@@ -63,6 +63,9 @@ lg[type="poem"]{
 lg[type="stanza"]{
     margin-top: 2em;
 }
+lg[type="stanza"][met="#Io"]{
+    margin-top:0;
+}
 lg[type="poem"]:after{
     content:"";
     display: block;
@@ -112,6 +115,33 @@ pb {
     margin: 1em 0;
     padding: 0;
 
+}
+
+/* Metrik */
+
+lg[type="poem"]{
+    text-align:left;
+}
+lg[met="#ElDis"] l:nth-child(2n) {
+    margin-left: 2em;
+}
+
+[met="#Ar2"] l:nth-child(2n) {
+    margin-left: 2em;
+}
+
+[met="#PhalPenta"] l:nth-child(2n) {
+    margin-left: 2em;
+}
+
+[met="#Sapph1ElDis"] l:nth-child(4) {
+    margin-left: 4em;
+    margin-bottom:2em;
+}
+
+[met="#Sapph1Hexa"] l:nth-child(4) {
+    margin-left:2em;
+    margin-bottom:2em;
 }
 
 /* Indizes */
