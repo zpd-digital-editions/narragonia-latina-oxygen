@@ -19,13 +19,97 @@ You should have received a copy of the GNU Lesser General Public License
 along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 */
 
-@import url("../../../ediarum.BASE.edit-2.0.0/css/standard.css");
+@import url("../../../ediarum.BASE.edit/css/standard.css");
 
+@import url('https://fonts.cdnfonts.com/css/junicode');
+
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+:root {
+    font-family: 'Junicode', sans-serif;                                         
+}
+  
+/* TEIHEADER */
+TEI::before{
+    content: "TEI Dokument\a" "ID" 
+        oxy_textfield(
+            edit, '@xml:id',
+            columns, 40,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+    display:block;;
+    color:  #5A5A5A;
+    font-size: 1.2em;
+}
+titleStmt, TEI::before, fileDesc > editionStmt, fileDesc > publicationStmt, sourceDesc, encodingDesc, profileDesc{
+    border: 1px solid #5A5A5A;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 0 0 0.5em 0;
+}
+titleStmt, teiHeader, fileDesc, fileDesc > editionStmt, fileDesc > publicationStmt, sourceDesc, encodingDesc, profileDesc{
+    content: "";
+    display: block;
+}
+titleStmt{
+    display: flex;
+    -oxy-foldable: true;
+}
+titleStmt::before, title[type="main"]::before, title[type="sub"]::before{
+    display: block;
+    color: #5A5A5A;
+}
+titleStmt::before{
+    content: "Titelei";
+    margin: 0 0 0.5em 0;
+}
+titleStmt::after{
+    content: oxy_button(action, oxy_action(
+        name, "Add Author",
+        description, "Inserts personal dto the TEIHeader",
+        operation, "InsertFragmentOperation",
+        arg-fragment, '<author xmlns="http://www.tei-c.org/ns/1.0"><persName><surname></surname><forename></forename></persName></author>'
+    ));
+}
+title[type="main"]::before {
+    content: "Titel";
+}
+title[type="sub"]::before{
+    content: "Untertitel";
+}
+title[type="main"] {
+    content: 
+        oxy_textfield(
+            edit, '#text',
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+     margin: 0;
+}
+title[type="sub"]{
+    content:  
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+     margin: 0;
+}
+title[level]{
+    content:  
+        oxy_label(text, "Titel", styles, "display: block;")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+  
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
     padding: 1em;
-    background-color: rgb(249, 251, 255);
+    background-color: #faf8f6;
     margin: 0.3em;
 }
 div[type="chapter"] head{
@@ -33,6 +117,7 @@ div[type="chapter"] head{
     font-size: large;
     padding-top: 0.7em;
 }
+
 
 text ab[style^=text-align] {
     content:attr(style);
@@ -60,6 +145,48 @@ lg[type="poem"]:after{
     border-bottom: 0.05em solid;
     margin-left: 8em;
     margin-right: 8em;
+
+ab[type="chapterTitle"] reg{
+    color: #8b0000;
+    font-size: large;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ab[type="chapterTitle"] orig{
+    color: #999999;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+ab::before{
+    content:"\a";
+    white-space: pre;
+}
+
+l {
+    -oxy-display-tags: none;
+}
+
+l::after {
+    content:"\a";
+    white-space: pre;
+}
+
+lg::after {
+    content:"\a";
+    white-space: pre;
+}
+
+pb {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+
 }
 
 /* Indizes */
@@ -157,4 +284,306 @@ lg[type="stanza"]::before {
     display: block;
     content: attr(met);
     background-color: red;
+}
+
+
+
+/* header */
+
+
+author persName{
+    content: "Autor/in: \a ";
+}
+
+surname{
+    content:
+        oxy_label(text, "Nachname: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+surname::after {
+    display:none;
+}
+forename{
+    content:
+        oxy_label(text, "Vorname:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+editor {
+    content:"Editor: \a ";
+}
+
+editor::after {
+    display:none;
+}
+
+respStmt note::before, respStmt note::after {
+    display:none;
+}
+
+titleStatement {
+    display: inline-block;
+}
+
+editor::before, ref::before, teiHeader p, repository::before, surname::after, forename::before, forename::after, orgName::before, orgName::after, note::before, email::before, date::before, availability::before, availability::after, idno::after,settlement::before, settlement::after, pubPlace::before, repository::after, physDesc::after, encodingDesc::after {
+    content:"\a";
+    white-space: pre;
+}
+
+orgName{
+    content:
+        oxy_label(text, "Name der Institution: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+orgName[role="hostingInstitution"]{
+    content:
+        oxy_label(text, "Name der ausrichtenden Institution: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+orgName[role="project"]{
+    content:
+        oxy_label(text, "Name des Projekts: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+
+oxy|comment {
+    display:none !important;
+}
+
+msDesc {
+    content: "Manuskriptbeschreibung: " !important;
+}
+
+teiHeader note{
+    content:
+        oxy_label(text, "Bemerkung zur Bereitstellung: ")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+biblFull {
+    content: "Bibliografische Beschreibung: \a ";
+}
+
+sourceDesc titleStmt {
+    display:none;
+}
+
+editionStmt {
+    content:"Angaben zur Ausgabe: \a " !important;
+    display: block !important;
+}
+
+publicationStmt {
+    content:"Angaben zur Veröffentlichung: \a ";
+    display: block !important;
+}
+
+edition{
+    content:
+        oxy_label(text, "Edition: ")
+            oxy_textArea(
+                edit, "#text",
+                columns, 60,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+ref {
+    content: "Referenz: " attr(target);
+}
+
+publisher{
+    content:
+        oxy_label(text, "Herausgeber: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+email{
+    content:
+        oxy_label(text, "Email: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+addrLine{
+    content:
+        oxy_label(text, "Adresse: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+pubPlace{
+    content:
+        oxy_label(text, "Publikationsort: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+date[type="publication"]{
+    content:
+        oxy_label(text, "Veröffentlichung: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+date[type="firstPublication"]{
+    content:
+        oxy_label(text, "Erstveröffentlichung: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+availability{
+    content:"Verfügbarkeit: ";
+}
+
+idno:has(>idno[resp]) {
+    content:"Identifikation: \a ";
+}
+
+idno[type="URLWeb"]{
+    content:
+        oxy_label(text, "URL: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 60,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+settlement{
+    content:
+        oxy_label(text, "Standort: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+}
+
+repository{
+     content:
+        oxy_label(text, "Repositorium: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+physDesc::before {
+    content: "Physische Beschreibung: " !important;
+}
+
+typeDesc{
+    content:
+        oxy_label(text, "Schriftbeschreibung: ") !important;
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+teiHeader p{
+    content:
+        oxy_label(text, "Beschreibung: ")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+}
+
+encodingDesc{
+    content:"Kodierungsbeschreibung: ";
+}
+
+profileDesc{
+    content:"Textprofilbeschreibung: \a ";
+}
+
+language {
+    content: "Sprache: "
+    oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+span {
+    display: inline-block;
+    background-color: #d8c8b7;
+    -oxy-display-tags: none;
+}
+span::before {
+    display: inline-block;
+    content: attr(type) ": ";
+    background-color: #c6af98;
+
+/* Marginalie */
+ab::before, ab::after, ab[type="marginalie"] choice l::before {
+    content: "\a ";
+    white-space: pre;
+}
+
+ab[type="marginalie"] {
+    content: "Marginalie: ";
+    font-size: 0.75em;
+    line-height: 2;
+    position: relative;
+    border: 1px solid blue;
+}
+
+ab[type="marginalie"] choice l {
+    position: absolute;
+    width: 20%;
+    right: 100%;
+    text-align: left;
+
 }
