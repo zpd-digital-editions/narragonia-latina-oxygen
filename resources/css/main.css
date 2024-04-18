@@ -41,13 +41,13 @@ TEI::before{
     color:  #5A5A5A;
     font-size: 1.2em;
 }
-titleStmt, TEI::before{
+titleStmt, TEI::before, fileDesc > editionStmt, fileDesc > publicationStmt, sourceDesc, encodingDesc, profileDesc{
     border: 1px solid #5A5A5A;
     border-radius: 4px;
     padding: 1em;
     margin: 0 0 0.5em 0;
 }
-titleStmt, teiHeader, fileDesc{
+titleStmt, teiHeader, fileDesc, fileDesc > editionStmt, fileDesc > publicationStmt, sourceDesc, encodingDesc, profileDesc{
     content: "";
     display: block;
 }
@@ -334,7 +334,7 @@ titleStatement {
     display: inline-block;
 }
 
-editor::before, ref::before, teiHeader p, repository::before, surname::after, forename::after, orgName::after, availability::after, idno::after,settlement::before, settlement::after, repository::after, physDesc::after, encodingDesc::after {
+editor::before, ref::before, teiHeader p, repository::before, surname::after, forename::before, forename::after, orgName::before, orgName::after, note::before, email::before, date::before, availability::before, availability::after, idno::after,settlement::before, settlement::after, pubPlace::before, repository::after, physDesc::after, encodingDesc::after {
     content:"\a";
     white-space: pre;
 }
@@ -395,7 +395,7 @@ sourceDesc titleStmt {
 }
 
 editionStmt {
-    content:"Angaben zur Ausgabe: \a ";
+    content:"Angaben zur Ausgabe: \a " !important;
     display: block !important;
 }
 
@@ -495,8 +495,6 @@ idno[type="URLWeb"]{
      visibility: -oxy-collapse-text;
 }
 
-
-
 settlement{
     content:
         oxy_label(text, "Standort: ")
@@ -538,6 +536,7 @@ teiHeader p{
             edit, "#text",
             columns, 60,
             fontInherit,true);
+    visibility: -oxy-collapse-text;
 }
 
 encodingDesc{
@@ -549,7 +548,7 @@ profileDesc{
 }
 
 language {
-    content: "Sprache: ";
+    content: "Sprache: "
     oxy_textfield(
             edit, "#text",
             columns, 40,
