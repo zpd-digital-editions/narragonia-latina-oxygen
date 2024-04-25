@@ -131,6 +131,10 @@ l {
     padding-bottom: 0.2em;
 }
 
+l::after {
+    content:"\a";
+}
+
 lg::after {
     content:"\a";
     white-space: pre;
