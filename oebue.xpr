@@ -333,7 +333,19 @@
     </meta>
     <projectTree name="oebue.xpr">
         <folder path="."/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Anmerkungen.xml"/>
         <file name="http://Herbst:9.1.146;345;92;433;261;284;89;304;288;93;294;147;223;210;218;250;284;326;269;323;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Lesetexte/B_D579_Lesetext.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Uebersetzungen/B_D579_Uebersetzung.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/L_D373_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Lesetexte/L_D373_Lesetext.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Lesetexte/L_D373_Lesetext_ohne_ocr.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Uebersetzungen/L_D373_Uebersetzung.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Metriken.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Orte.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Personen.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Sachbegriffe.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Werke.xml"/>
         <file name="http://Herbst:9.1.146;345;92;433;261;284;89;304;288;93;294;147;223;210;218;250;284;326;269;323;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
     </projectTree>
 </project>
