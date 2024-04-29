@@ -106,6 +106,7 @@ lg[type="poem"]:after{
 }
 head > lg[type="poem"]{
     font-size:large;
+}
 
 ab[type="chapterTitle"] reg{
     color: #8b0000;
@@ -270,8 +271,7 @@ lg[type="stanza"]::before {
 span {
     display: block;
     background-color: #d8c8b7;
-
-
+}
 
 /* header */
 title[type="main"] {
@@ -339,10 +339,12 @@ span {
     background-color: #d8c8b7;
     -oxy-display-tags: none;
 }
+
 span::before {
     display: inline-block;
     content: attr(type) ": ";
     background-color: #c6af98;
+}
 
 /* Marginalie */
 ab::before, ab::after, ab[type="marginalie"] choice l::before {
@@ -366,3 +368,10 @@ ab[type="marginalie"] choice l {
 
 }
 
+text app lem::after{
+    content: " ]"
+}
+
+text app rdg:after{
+    content: " " attr(wit);
+}

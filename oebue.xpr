@@ -43,6 +43,14 @@
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.editor.open.option.pane</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.save.option.pane</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.extensions.update.site.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
