@@ -58,6 +58,277 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>4</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>3</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>2</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<null/>
+										</field>
+										<field name="patchHandling">
+											<String>removeIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<actionMode>
+												<field name="xpathCondition">
+													<String>ancestor-or-self::app[@n='yes']</String>
+												</field>
+												<field name="argValues">
+													<serializableOrderedMap>
+														<entry>
+															<String>fragment</String>
+															<String>&lt;lem xmlns="http://www.tei-c.org/ns/1.0">&lt;/lem>
+&lt;rdg xmlns="http://www.tei-c.org/ns/1.0" cause="${ask('Grund für die Variante eingeben', combobox, ('transposition':'Ersetzung';'addition':'Hinzufügung';'omission':'Auslassung';'orthographic':'Abweichung durch Schreibfehler';'margin':'Lesart steht am Rand';'erasion':'Auslassung aufgrund einer Löschung';'noValue':'keine Angabe';), 'noValue')}" wit="${ask('Auf welche Textzeugen möchten Sie verweisen?', radio, ('witness':'einzelne Textzeugen';'listWitGroup':'Gruppe von Textzeugen';), 'witness')}">${ask('Variante eintragen', generic, '')}&lt;/rdg></String>
+														</entry>
+													</serializableOrderedMap>
+												</field>
+												<field name="operationID">
+													<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+												</field>
+											</actionMode>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>1</Integer>
+										</field>
+										<field name="value">
+											<actionMode>
+												<field name="xpathCondition">
+													<String>ancestor-or-self::app[@n='no']</String>
+												</field>
+												<field name="argValues">
+													<serializableOrderedMap>
+														<entry>
+															<String>fragment</String>
+															<String>&lt;rdg xmlns="http://www.tei-c.org/ns/1.0" cause="${ask('Grund für die Variante eingeben', combobox, ('transposition':'Ersetzung';'addition':'Hinzufügung';'omission':'Auslassung';'orthographic':'Abweichung durch Schreibfehler';'margin':'Lesart steht am Rand';'erasion':'Auslassung aufgrund einer Löschung';'noValue':'keine Angabe';), 'noValue')}" wit="${ask('Auf welche Textzeugen möchten Sie verweisen?', radio, ('witness':'einzelne Textzeugen';'listWitGroup':'Gruppe von Textzeugen';), 'witness')}">&lt;/rdg></String>
+														</entry>
+													</serializableOrderedMap>
+												</field>
+												<field name="operationID">
+													<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+												</field>
+											</actionMode>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>2</Integer>
+										</field>
+										<field name="value">
+											<actionMode>
+												<field name="xpathCondition">
+													<String>ancestor-or-self::app[not(@n)]</String>
+												</field>
+												<field name="argValues">
+													<serializableOrderedMap>
+														<entry>
+															<String>fragment</String>
+															<String>&lt;rdg xmlns="http://www.tei-c.org/ns/1.0" cause="${ask('Grund für die Variante eingeben', combobox, ('transposition':'Ersetzung';'addition':'Hinzufügung';'omission':'Auslassung';'orthographic':'Abweichung durch Schreibfehler';'margin':'Lesart steht am Rand';'erasion':'Auslassung aufgrund einer Löschung';'noValue':'keine Angabe';), 'noValue')}" wit="${ask('Auf welche Textzeugen möchten Sie verweisen?', radio, ('witness':'einzelne Textzeugen';'listWitGroup':'Gruppe von Textzeugen';), 'witness')}">${ask('Variante eintragen', generic, '')}&lt;/rdg></String>
+														</entry>
+														<entry>
+															<String>insertLocation</String>
+															<String>ancestor-or-self::app[not(@n)]</String>
+														</entry>
+														<entry>
+															<String>insertPosition</String>
+															<String>Inside as last child</String>
+														</entry>
+													</serializableOrderedMap>
+												</field>
+												<field name="operationID">
+													<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+												</field>
+											</actionMode>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>3</Integer>
+										</field>
+										<field name="value">
+											<actionMode>
+												<field name="xpathCondition">
+													<String>ancestor-or-self::app[@n='yes']</String>
+												</field>
+												<field name="argValues">
+													<serializableOrderedMap>
+														<entry>
+															<String>fragment</String>
+															<String>&lt;lem xmlns="http://www.tei-c.org/ns/1.0">${ask('Lemma eintragen', generic, '')}&lt;/lem>
+&lt;rdg xmlns="http://www.tei-c.org/ns/1.0" cause="${ask('Grund für die Variante eingeben', combobox, ('transposition':'Ersetzung';'addition':'Hinzufügung';'omission':'Auslassung';'orthographic':'Abweichung durch Schreibfehler';'margin':'Lesart steht am Rand';'erasion':'Auslassung aufgrund einer Löschung';'noValue':'keine Angabe';), 'noValue')}" wit="${ask('Auf welche Textzeugen möchten Sie verweisen?', radio, ('witness':'einzelne Textzeugen';'listWitGroup':'Gruppe von Textzeugen';), 'witness')}">${ask('Variante eintragen', generic, '')}&lt;/rdg></String>
+														</entry>
+														<entry>
+															<String>insertLocation</String>
+															<String>ancestor-or-self::app[@n='yes']</String>
+														</entry>
+														<entry>
+															<String>insertPosition</String>
+															<String>Inside as last child</String>
+														</entry>
+													</serializableOrderedMap>
+												</field>
+												<field name="operationID">
+													<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+												</field>
+											</actionMode>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/actionDescriptors/[172]/actionModes</String>
+										</field>
+										<field name="index">
+											<Integer>4</Integer>
+										</field>
+										<field name="value">
+											<actionMode>
+												<field name="xpathCondition">
+													<String>ancestor-or-self::app[@n='no']</String>
+												</field>
+												<field name="argValues">
+													<serializableOrderedMap>
+														<entry>
+															<String>fragment</String>
+															<String>&lt;rdg xmlns="http://www.tei-c.org/ns/1.0" cause="${ask('Grund für die Variante eingeben', combobox, ('transposition':'Ersetzung';'addition':'Hinzufügung';'omission':'Auslassung';'orthographic':'Abweichung durch Schreibfehler';'margin':'Lesart steht am Rand';'erasion':'Auslassung aufgrund einer Löschung';'noValue':'keine Angabe';), 'noValue')}" wit="${ask('Auf welche Textzeugen möchten Sie verweisen?', radio, ('witness':'einzelne Textzeugen';'listWitGroup':'Gruppe von Textzeugen';), 'witness')}">${ask('Variante eintragen', generic, '')}&lt;/rdg></String>
+														</entry>
+														<entry>
+															<String>insertLocation</String>
+															<String>ancestor-or-self::app[@n='no']</String>
+														</entry>
+														<entry>
+															<String>insertPosition</String>
+															<String>Inside as last child</String>
+														</entry>
+													</serializableOrderedMap>
+												</field>
+												<field name="operationID">
+													<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+												</field>
+											</actionMode>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
 											<String>authorExtensionDescriptor/actionDescriptors/[173]/actionModes</String>
 										</field>
 										<field name="index">
@@ -129,6 +400,10 @@
 															<String>#$XPATH{@xml:id}</String>
 														</entry>
 														<entry>
+															<String>multiple selection</String>
+															<String>true</String>
+														</entry>
+														<entry>
 															<String>namespaces</String>
 															<String>tei:http://www.tei-c.org/ns/1.0</String>
 														</entry>
@@ -191,6 +466,10 @@
 														<entry>
 															<String>item variable</String>
 															<String>#$XPATH{@xml:id}</String>
+														</entry>
+														<entry>
+															<String>multiple selection</String>
+															<String>true</String>
 														</entry>
 														<entry>
 															<String>namespaces</String>
@@ -7085,6 +7364,27 @@ or ancestor-or-self::abstract</String>
 													<null/>
 												</field>
 											</menu>
+										</field>
+										<field name="patchHandling">
+											<String>addIndex</String>
+										</field>
+										<field name="anchor">
+											<null/>
+										</field>
+									</poPatch>
+									<poPatch>
+										<field name="fieldPath">
+											<String>authorExtensionDescriptor/popupMenuDescriptor/menuEntriesDescriptorList</String>
+										</field>
+										<field name="index">
+											<Integer>0</Integer>
+										</field>
+										<field name="value">
+											<menuItem>
+												<field name="actionID">
+													<String>var_app_all</String>
+												</field>
+											</menuItem>
 										</field>
 										<field name="patchHandling">
 											<String>addIndex</String>
