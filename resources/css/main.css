@@ -27,6 +27,7 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 
 :root {
     font-family: 'Junicode', sans-serif;
+    column-count:2;
                                                 
 }
   
@@ -52,8 +53,8 @@ text ab[style^=text-align] {
 
 lg[type="poem"]:before{
     display:block;
-    content:attr(met);
-    background-color:lightgreen;
+    content:"Metrum: " attr(met);
+    color:gray;
 }
 
 lg[type="poem"]{
@@ -142,6 +143,34 @@ lg[met="#ElDis"] l:nth-child(2n) {
 [met="#Sapph1Hexa"] l:nth-child(4) {
     margin-left:2em;
     margin-bottom:2em;
+}
+
+lg[met="#Ad"] {
+    width: 100%;
+    position:relative;
+}
+
+[met="#Ad"] l:nth-child(-n+4){
+    display:block;
+}
+
+[met="#Ad"] l:nth-last-child(-n+4){
+    display:block;
+    text-align:right;
+}
+
+lg[met="#KataDiPher"] {
+    width: 100%;
+    position:relative;
+}
+
+[met="#KataDiPher"] l:nth-child(-n+4){
+    display:block;
+}
+
+[met="#KataDiPher"] l:nth-last-child(-n+4){
+    display:block;
+    text-align:right;
 }
 
 /* Indizes */
