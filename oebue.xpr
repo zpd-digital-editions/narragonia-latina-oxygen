@@ -14,6 +14,23 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
+                        <String>document.types</String>
+                        <documentTypeDescriptor-array/>
+                    </entry>
+                    <entry>
+                        <String>document.types.order</String>
+                        <documentTypeEntry-array>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/Form-TeiHeader/ediarum.formteiheader.edit.framework/ediarum.formTeiHeader.edit</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>false</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                        </documentTypeEntry-array>
+                    </entry>
+                    <entry>
                         <String>enable.project.master.files.support</String>
                         <Boolean>true</Boolean>
                     </entry>
