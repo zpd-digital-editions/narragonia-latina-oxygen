@@ -30,7 +30,7 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
     column-count:2;
                                                 
 }
-  
+
 /* Kapitel */
 div[type="chapter"]{
     margin-bottom: 3em;
@@ -44,6 +44,38 @@ div[type="chapter"] head{
     padding-top: 0.7em;
 }
 
+ab[type="chapterTitle"] reg{
+    color: #8b0000;
+    font-size: large;
+    text-align: center;
+    margin-left: 15px;
+}
+
+ab[type="chapterTitle"] orig{
+    color: #999999;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+ab::before{
+    content:"\a";
+    white-space: pre;
+}
+
+lg::after {
+    content:"\a";
+    white-space: pre;
+}
+
+pb {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
 text ab[style^=text-align] {
     content:attr(style);
@@ -60,6 +92,7 @@ lg[type="poem"]:before{
 lg[type="poem"]{
     margin-left: 2em;
     text-align: left;
+    color: gray;
 }
 lg[type="stanza"]{
     margin-top: 2em;
@@ -74,6 +107,10 @@ lg[type="poem"]:after{
     border-bottom: 0.05em solid;
     margin-left: 8em;
     margin-right: 8em;
+}
+head > lg[type="poem"]{
+    font-size:large;
+}
 
 ab[type="chapterTitle"] reg{
     color: #8b0000;
@@ -96,11 +133,11 @@ ab::before{
 
 l {
     -oxy-display-tags: none;
+    padding-bottom: 0.2em;
 }
 
 l::after {
     content:"\a";
-    white-space: pre;
 }
 
 lg::after {
@@ -115,7 +152,6 @@ pb {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-
 }
 
 /* Metrik */
@@ -172,6 +208,20 @@ lg[met="#KataDiPher"] {
     display:block;
     text-align:right;
 }
+
+/* Initiale */
+g[style="big"]{
+    font-size: xx-large;
+}
+
+g[style="medium"]{
+    font-size: x-large;
+}
+
+g[style="=small"]{
+    font-size: large;
+}
+
 
 /* Indizes */
 text persName::before,
@@ -246,7 +296,11 @@ text note[type="marginalia"][place="bottom_outer"]::after{
 text note[type="marginalia"][place="intercolumn"]::after{
     content: url('../icons/intercolumn.png');
 }
-
+/* Schriftfarbe */
+text hi[style^=color] {
+    color: oxy_substring(attr(style),6, 
+oxy_indexof(attr(style),";"));
+}
 /* Spalten */
 text cb{
     height: 2.5em;
@@ -271,6 +325,12 @@ lg[type="stanza"]::before {
 }
 
 
+/* span type bullshit */
+
+span {
+    display: block;
+    background-color: #d8c8b7;
+}
 
 /* header */
 title[type="main"] {
@@ -337,7 +397,8 @@ titleStatement {
     display: inline-block;
 }
 
-titleStatement::before, editor::before, title::after, ref::before, teiHeader p, repository::before, surname::after, forename::after, orgName::after, availability::after, idno::after,settlement::before, settlement::after, repository::after, physDesc::after, encodingDesc::after {
+
+titleStatement::before, editor::before, title::after, teiHeader p, repository::before {
     content:"\a";
     white-space: pre;
 }
@@ -423,7 +484,28 @@ edition{
 }
 
 ref {
-    content: "Referenz: " attr(target);
+    border-radius: 4px;
+    border: 1px dashed #00C6FF;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+ref::after{
+    content: "*";
+    color: #00C6FF;
+}
+
+ref:hover::after {
+  content: "Referenziert: " attr(target);
+  position: relative;
+  bottom: 0;
+  background: transparent !important;
+  border: none !important;
+  padding:2px;
+  color: #A9A9A9;
+  font-style:italic;
+  background-color: coral;
+  display: inline-block;
 }
 
 publisher{
@@ -579,10 +661,12 @@ span {
     background-color: #d8c8b7;
     -oxy-display-tags: none;
 }
+
 span::before {
     display: inline-block;
     content: attr(type) ": ";
     background-color: #c6af98;
+}
 
 /* Marginalie */
 ab::before, ab::after, ab[type="marginalie"] choice l::before {
@@ -604,4 +688,12 @@ ab[type="marginalie"] choice l {
     right: 100%;
     text-align: left;
 
+}
+
+text app lem::after{
+    content: " ]"
+}
+
+text app rdg:after{
+    content: " " attr(wit);
 }

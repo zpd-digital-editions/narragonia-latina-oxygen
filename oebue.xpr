@@ -10,10 +10,6 @@
                         <Boolean>false</Boolean>
                     </entry>
                     <entry>
-                        <String>document.type.use.grammar.cache</String>
-                        <Boolean>false</Boolean>
-                    </entry>
-                    <entry>
                         <String>document.types</String>
                         <documentTypeDescriptor-array/>
                     </entry>
@@ -45,7 +41,7 @@
                     </entry>
                     <entry>
                         <String>frameworks.directory.url.with.editor.variables</String>
-                        <String>file:/C:/Users/janin/Documents/Studium/Digital%20Humanities/Hiwi/ediarum%20Frameworks</String>
+                        <String>${pdu}/../</String>
                     </entry>
                     <entry>
                         <String>key.custom.editor.variables.option.pane</String>
@@ -58,6 +54,14 @@
                     <entry>
                         <String>key.editor.document.type.custom.locations.option.pane</String>
                         <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.open.option.pane</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>key.editor.save.option.pane</String>
+                        <Boolean>false</Boolean>
                     </entry>
                     <entry>
                         <String>key.extensions.update.site.option.pane</String>
@@ -197,28 +201,6 @@
                                 </field>
                                 <field name="shortDescription">
                                     <String>URL (with credentials) to the website</String>
-                                </field>
-                            </userEditorVariable>
-                            <userEditorVariable>
-                                <field name="name">
-                                    <String>${lexer_url}</String>
-                                </field>
-                                <field name="value">
-                                    <String>http://woerterbuchnetz.de/cgi-bin/WBNetz/wbgui_py?sigle=Lexer&amp;mode=Vernetzung&amp;hitlist=&amp;patternlist=&amp;lemid=</String>
-                                </field>
-                                <field name="shortDescription">
-                                    <String>URL zur Online Ausgabe Lexer</String>
-                                </field>
-                            </userEditorVariable>
-                            <userEditorVariable>
-                                <field name="name">
-                                    <String>${mwb_url}</String>
-                                </field>
-                                <field name="value">
-                                    <String>http://www.mhdwb-online.de/wb/</String>
-                                </field>
-                                <field name="shortDescription">
-                                    <String>URL zur Online Ausgabe MWB</String>
                                 </field>
                             </userEditorVariable>
                             <userEditorVariable>
@@ -372,7 +354,19 @@
     </meta>
     <projectTree name="oebue.xpr">
         <folder path="."/>
-        <file name="http://Herbst:9.1.97;301;139;430;266;236;89;301;288;91;244;149;173;210;218;258;288;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
-        <file name="http://Herbst:9.1.97;301;139;430;266;236;89;301;288;91;244;149;173;210;218;258;288;279;269;281;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Anmerkungen.xml"/>
+        <file name="http://Herbst:9.1.146;345;92;433;261;284;89;304;288;93;294;147;223;210;218;250;284;326;269;323;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/B_D579_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Lesetexte/B_D579_Lesetext.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Uebersetzungen/B_D579_Uebersetzung.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/L_D373_Kommentar.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Lesetexte/L_D373_Lesetext.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Lesetexte/L_D373_Lesetext_ohne_ocr.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Uebersetzungen/L_D373_Uebersetzung.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Metriken.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Orte.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Personen.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Sachbegriffe.xml"/>
+        <file name="http://Herbst:9.1.170;213;172;156;203;218;121;126;127;108;140;163;215;157;155;96;300;139;423;262;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Register/Werke.xml"/>
+        <file name="http://Herbst:9.1.146;345;92;433;261;284;89;304;288;93;294;147;223;210;218;250;284;326;269;323;@narragonien-latina.informatik.uni-wuerzburg.de/exist/webdav/db/projects/narragonia-latina/data/Kommentar/yanniks_test.xml"/>
     </projectTree>
 </project>
