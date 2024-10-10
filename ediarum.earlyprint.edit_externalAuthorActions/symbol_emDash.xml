@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
   id="symbol_emDash">
-  <a:name>Geviertstrich</a:name>
+  <a:name>Länge</a:name>
   <a:smallIconPath href="${frameworks}/narragonia-latina-oxygen/resources/icons/geviert_symbol.png"/>
   <a:operations>
     <a:operation id="InsertFragmentOperation">

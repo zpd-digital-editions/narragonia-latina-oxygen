@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
   id="symbol_longOverTwoShort">
-  <a:name>Lang über doppel Kurz</a:name>
+  <a:name>Länge über Doppelkürze</a:name>
   <a:smallIconPath
     href="${frameworks}/narragonia-latina-oxygen/resources/icons/lang_doppelkurz_symbol.png"/>
   <a:operations>
