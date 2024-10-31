@@ -2,13 +2,17 @@
 <a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
-  id="symbol_pipe">
-  <a:name>Zäsur</a:name>
-  <a:smallIconPath href="${frameworks}/narragonia-latina-oxygen/resources/icons/pipe_symbol.png"/>
+  id="lg[@type=&#34;poem&#34;]">
+  <a:name>lg[@type="poem"]</a:name>
+  <a:description>Fügt @type="poem" in lg ein</a:description>
   <a:operations>
-    <a:operation id="InsertFragmentOperation">
+    <a:operation id="ChangeAttributeOperation">
+      <a:xpathCondition>ancestor-or-self::lg</a:xpathCondition>
       <a:arguments>
-        <a:argument name="fragment">|</a:argument>
+        <a:argument name="elementLocation">ancestor-or-self::lg</a:argument>
+        <a:argument name="name">type</a:argument>
+        <a:argument name="namespace"/>
+        <a:argument name="value">poem</a:argument>
       </a:arguments>
     </a:operation>
   </a:operations>

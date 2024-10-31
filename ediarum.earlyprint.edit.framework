@@ -7104,104 +7104,6 @@ or ancestor-or-self::abstract</String>
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>272</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>insertVerseMetric</String>
-												</field>
-												<field name="name">
-													<String>Strophen Metrik hinzufügen</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String></String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String>ancestor-or-self::lg[@type="stanza"]</String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>URL</String>
-																		<String>${ediarum_project_domain}${ediarum_projects_directory}${ediarum_project_name}${ediarum_index_metric}</String>
-																	</entry>
-																	<entry>
-																		<String>attribute name</String>
-																		<String>met</String>
-																	</entry>
-																	<entry>
-																		<String>attribute value</String>
-																		<String>$ITEMS</String>
-																	</entry>
-																	<entry>
-																		<String>item rendering</String>
-																		<String>$XPATH{//tei:span}</String>
-																	</entry>
-																	<entry>
-																		<String>item separator</String>
-																		<String> </String>
-																	</entry>
-																	<entry>
-																		<String>item variable</String>
-																		<String>#$XPATH{@xml:id}</String>
-																	</entry>
-																	<entry>
-																		<String>multiple selection</String>
-																		<String>false</String>
-																	</entry>
-																	<entry>
-																		<String>namespaces</String>
-																		<String>tei:http://www.tei-c.org/ns/1.0</String>
-																	</entry>
-																	<entry>
-																		<String>node</String>
-																		<String>//tei:item</String>
-																	</entry>
-																	<entry>
-																		<String>xpath to element of the attribute</String>
-																		<String>ancestor-or-self::lg[@type="stanza"]</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>org.bbaw.telota.ediarum.RegisterChangeAttributeOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
 											<Integer>77</Integer>
 										</field>
 										<field name="value">
@@ -8811,7 +8713,35 @@ or ancestor-or-self::abstract</String>
 																	</toolbarItem>
 																	<toolbarItem>
 																		<field name="actionID">
-																			<String>insertVerseMetric</String>
+																			<String>insertStanzaMetric</String>
+																		</field>
+																	</toolbarItem>
+																</toolbarEntry-array>
+															</field>
+														</toolbar>
+														<toolbar>
+															<field name="id">
+																<String>Typ &amp; Metrum</String>
+															</field>
+															<field name="type">
+																<Integer>3</Integer>
+															</field>
+															<field name="largeIconPath">
+																<String></String>
+															</field>
+															<field name="smallIconPath">
+																<String></String>
+															</field>
+															<field name="toolbarEntriesDescriptorList">
+																<toolbarEntry-array>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>poemTypeMet</String>
+																		</field>
+																	</toolbarItem>
+																	<toolbarItem>
+																		<field name="actionID">
+																			<String>stanzaTypeMet</String>
 																		</field>
 																	</toolbarItem>
 																</toolbarEntry-array>

@@ -27,6 +27,7 @@ along with ediarum.BASE.edit. If not, see <http://www.gnu.org/licenses/>.
 
 :root {
     font-family: 'Junicode', sans-serif;
+    column-count:2;
                                                 
 }
 
@@ -42,7 +43,6 @@ div[type="chapter"] head{
     font-size: large;
     padding-top: 0.7em;
 }
-
 
 ab[type="chapterTitle"] reg{
     color: #8b0000;
@@ -76,6 +76,7 @@ pb {
     margin: 1em 0;
     padding: 0;
 }
+
 text ab[style^=text-align] {
     content:attr(style);
 }
@@ -84,8 +85,8 @@ text ab[style^=text-align] {
 
 lg[type="poem"]:before{
     display:block;
-    content:attr(met);
-    background-color:lightgreen;
+    content:"Metrum: " attr(met);
+    color:gray;
 }
 
 lg[type="poem"]{
@@ -95,6 +96,9 @@ lg[type="poem"]{
 }
 lg[type="stanza"]{
     margin-top: 2em;
+}
+lg[type="stanza"][met="#Io"]{
+    margin-top:0;
 }
 lg[type="poem"]:after{
     content:"";
@@ -148,6 +152,61 @@ pb {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+/* Metrik */
+
+lg[type="poem"]{
+    text-align:left;
+}
+lg[met="#ElDis"] l:nth-child(2n) {
+    margin-left: 2em;
+}
+
+[met="#Ar2"] l:nth-child(2n) {
+    margin-left: 2em;
+}
+
+[met="#PhalPenta"] l:nth-child(2n) {
+    margin-left: 2em;
+}
+
+[met="#Sapph1ElDis"] l:nth-child(4) {
+    margin-left: 4em;
+    margin-bottom:2em;
+}
+
+[met="#Sapph1Hexa"] l:nth-child(4) {
+    margin-left:2em;
+    margin-bottom:2em;
+}
+
+lg[met="#Ad"] {
+    width: 100%;
+    position:relative;
+}
+
+[met="#Ad"] l:nth-child(-n+4){
+    display:block;
+}
+
+[met="#Ad"] l:nth-last-child(-n+4){
+    display:block;
+    text-align:right;
+}
+
+lg[met="#KataDiPher"] {
+    width: 100%;
+    position:relative;
+}
+
+[met="#KataDiPher"] l:nth-child(-n+4){
+    display:block;
+}
+
+[met="#KataDiPher"] l:nth-last-child(-n+4){
+    display:block;
+    text-align:right;
 }
 
 /* Initiale */
@@ -275,24 +334,101 @@ span {
 
 /* header */
 title[type="main"] {
-    text-decoration: underline;  
+    text-decoration: underline;
+    content: 
+        oxy_label(text, "Titel:")
+        oxy_textfield(
+            edit, '#text',
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
-author {
-    content: "Autor: ";
+title[type="sub"]{
+    content:  
+        oxy_label(text, "Untertitel:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+author persName{
+    content: "Autor/in: \a ";
+}
+
+surname{
+    content:
+        oxy_label(text, "Nachname: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+surname::after {
+    display:none;
+}
+forename{
+    content:
+        oxy_label(text, "Vorname:")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+editor {
+    content:"Editor: \a ";
+}
+
+editor::after {
+    display:none;
+}
+
+respStmt note::before, respStmt note::after {
+    display:none;
 }
 
 titleStatement {
     display: inline-block;
 }
 
+
 titleStatement::before, editor::before, title::after, teiHeader p, repository::before {
     content:"\a";
     white-space: pre;
 }
 
-sourceDesc titleStmt {
-    visibility: hidden;
+orgName{
+    content:
+        oxy_label(text, "Name der Institution: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+orgName[role="hostingInstitution"]{
+    content:
+        oxy_label(text, "Name der ausrichtenden Institution: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+orgName[role="project"]{
+    content:
+        oxy_label(text, "Name des Projekts: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 titleStatement::after {
@@ -303,6 +439,48 @@ titleStatement::after {
 
 oxy|comment {
     display:none !important;
+}
+
+msDesc {
+    content: "Manuskriptbeschreibung: " !important;
+}
+
+teiHeader note{
+    content:
+        oxy_label(text, "Bemerkung zur Bereitstellung: ")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+biblFull {
+    content: "Bibliografische Beschreibung: \a ";
+}
+
+sourceDesc titleStmt {
+    display:none;
+}
+
+editionStmt {
+    content:"Angaben zur Ausgabe: \a ";
+    display: block !important;
+}
+
+publicationStmt {
+    content:"Angaben zur Veröffentlichung: \a ";
+    display: block !important;
+}
+
+edition{
+    content:
+        oxy_label(text, "Edition: ")
+            oxy_textArea(
+                edit, "#text",
+                columns, 60,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 ref {
@@ -330,8 +508,152 @@ ref:hover::after {
   display: inline-block;
 }
 
+publisher{
+    content:
+        oxy_label(text, "Herausgeber: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+email{
+    content:
+        oxy_label(text, "Email: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+addrLine{
+    content:
+        oxy_label(text, "Adresse: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+pubPlace{
+    content:
+        oxy_label(text, "Publikationsort: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+date[type="publication"]{
+    content:
+        oxy_label(text, "Veröffentlichung: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 40,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+date[type="firstPublication"]{
+    content:
+        oxy_label(text, "Erstveröffentlichung: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+availability{
+    content:"Verfügbarkeit: ";
+}
+
+idno:has(>idno[resp]) {
+    content:"Identifikation: \a ";
+}
+
+idno[type="URLWeb"]{
+    content:
+        oxy_label(text, "URL: ")
+            oxy_textfield(
+                edit, "#text",
+                columns, 60,
+                fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+title[level]{
+    content:  
+        oxy_label(text, "Titel: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+settlement{
+    content:
+        oxy_label(text, "Standort: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+    visibility: -oxy-collapse-text;
+}
+
+repository{
+     content:
+        oxy_label(text, "Repositorium: ")
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+physDesc::before {
+    content: "Physische Beschreibung: " !important;
+}
+
+typeDesc{
+    content:
+        oxy_label(text, "Schriftbeschreibung: ") !important;
+        oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+teiHeader p{
+    content:
+        oxy_label(text, "Beschreibung: ")
+        oxy_textArea(
+            edit, "#text",
+            columns, 60,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
+}
+
+encodingDesc{
+    content:"Kodierungsbeschreibung: ";
+}
+
+profileDesc{
+    content:"Textprofilbeschreibung: \a ";
+}
+
 language {
     content: "Sprache: ";
+    oxy_textfield(
+            edit, "#text",
+            columns, 40,
+            fontInherit,true);
+     visibility: -oxy-collapse-text;
 }
 
 span {

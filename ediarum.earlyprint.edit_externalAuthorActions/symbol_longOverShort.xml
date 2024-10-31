@@ -3,13 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
   id="symbol_longOverShort">
-  <a:name>Lang über Kurz</a:name>
-  <a:smallIconPath
-    href="${frameworks}/narragonia-latina-oxygen/resources/icons/lang_kurz_symbol.png"/>
+  <a:name>Kürze über Länge</a:name>
+  <a:smallIconPath href="${framework}/resources/icons/kurz_lang_symbol.png"/>
   <a:operations>
     <a:operation id="InsertFragmentOperation">
       <a:arguments>
-        <a:argument name="fragment">⏒</a:argument>
+        <a:argument name="fragment">⏓</a:argument>
       </a:arguments>
     </a:operation>
   </a:operations>
