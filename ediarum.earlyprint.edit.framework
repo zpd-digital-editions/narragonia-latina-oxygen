@@ -8828,6 +8828,11 @@ or ancestor-or-self::note[parent::notesStmt] </String>
 																<String>ref</String>
 															</field>
 														</toolbarItem>
+														<toolbarItem>
+															<field name="actionID">
+																<String>insertPoemMetric ref</String>
+															</field>
+														</toolbarItem>
 														<toolbarSeparator/>
 														<toolbar>
 															<field name="id">

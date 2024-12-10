@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+  id="insertPoemMetric ref - Kopie">
+  <a:name>Referenz Metrik für Gedichte</a:name>
+  <a:description>Metrum wird für ein Gedicht deklariert</a:description>
+  <a:operations>
+    <a:operation id="org.bbaw.telota.ediarum.RegisterSurroundWithDifferentFragmentsOperation">
+      <a:xpathCondition>ancestor-or-self::text</a:xpathCondition>
+      <a:arguments/>
+    </a:operation>
+  </a:operations>
+  <a:enabledInReadOnlyContext>true</a:enabledInReadOnlyContext>
+</a:authorAction>
